@@ -1,2 +1,5 @@
 *_modules
 
+*.json
+main.scss
+*.css
