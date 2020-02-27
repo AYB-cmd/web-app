@@ -1,9 +1,10 @@
-body {
+.container {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
   width: 100%; }
-
-h1 {
-  font-size: 48px;
-  color: red; }
-
-h2 {
-  color: blue; }
+  .container .sidebar {
+    height: 800px;
+    background-color: red; }
+  .container .sections {
+    height: 800px;
+    background-color: red; }

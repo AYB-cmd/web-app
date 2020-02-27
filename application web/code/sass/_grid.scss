@@ -1,0 +1,42 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 14.5fr;
+    width: 100%;
+    .sidebar{
+        height: 800px;
+        background-color: red;
+    }
+    .sections{
+        height: 800px;
+        background-color: green;
+        .HEADER{
+            display: grid;
+            grid-template-columns: 11.5fr 3fr;
+            height: 60%;
+            .header{
+               background-color: gray;
+               &__logo-block{
+                background: black;
+                height: 15%;
+                opacity: 0.6;
+               }
+               &__title-block{
+                background: white;
+                height: 60%;
+                &--title{
+                    background-color: black;
+                    height: 20%;
+                }
+                &--description{
+                    background-color: black;
+                    opacity: 0.2;
+                }
+            }
+            }
+            .agent{
+                background-color: yellow;
+                
+            }
+        }
+    }
+}
