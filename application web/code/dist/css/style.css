@@ -1,31 +1,46 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 14.5fr;
+  grid-template-areas: "sidebar header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
+  grid-template-columns: 1fr 15fr;
   width: 100%; }
   .container .sidebar {
-    height: 800px;
+    grid-area: sidebar;
     background-color: red; }
-  .container .sections {
-    height: 800px;
-    background-color: green; }
-    .container .sections .HEADER {
+  .container .HEADER {
+    grid-area: header;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 12fr 3fr; }
+    .container .HEADER .header {
+      background-color: yellow;
       display: grid;
-      grid-template-columns: 11.5fr 3fr;
-      height: 60%; }
-      .container .sections .HEADER .header {
-        background-color: gray; }
-        .container .sections .HEADER .header__logo-block {
-          background: black;
-          height: 15%;
-          opacity: 0.6; }
-        .container .sections .HEADER .header__title-block {
-          background: white;
-          height: 60%; }
-          .container .sections .HEADER .header__title-block--title {
-            background-color: black;
-            height: 20%; }
-          .container .sections .HEADER .header__title-block--description {
-            background-color: black;
-            opacity: 0.2; }
-      .container .sections .HEADER .agent {
-        background-color: yellow; }
+      grid-template-rows: 2fr 8fr 2fr; }
+      .container .HEADER .header__logo-block {
+        background-color: black; }
+      .container .HEADER .header__title-block {
+        background-color: black;
+        opacity: 0.3; }
+      .container .HEADER .header__brands {
+        background-color: black; }
+    .container .HEADER .agent {
+      background-color: blue; }
+  .container .features {
+    grid-area: features;
+    height: 800px;
+    background-color: white; }
+  .container .story {
+    grid-area: story;
+    height: 800px;
+    background-color: black; }
+  .container .maisons {
+    grid-area: maisons;
+    height: 800px;
+    background-color: white; }
+  .container .galleries {
+    grid-area: galleries;
+    height: 800px;
+    background-color: black; }
+  .container .footer {
+    grid-area: footer;
+    height: 400px;
+    background-color: green; }

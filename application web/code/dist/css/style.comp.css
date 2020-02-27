@@ -1,10 +1,19 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 11fr;
+  grid-template-areas: "sidebar header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
   width: 100%; }
   .container .sidebar {
-    height: 800px;
+    grid-area: sidebar;
     background-color: red; }
-  .container .sections {
-    height: 800px;
-    background-color: red; }
+  .container .HEADER {
+    grid-area: header; }
+  .container .features {
+    grid-area: features; }
+  .container .story {
+    grid-area: story; }
+  .container .maisons {
+    grid-area: maisons; }
+  .container .galleries {
+    grid-area: galleries; }
+  .container .footer {
+    grid-area: footer; }
