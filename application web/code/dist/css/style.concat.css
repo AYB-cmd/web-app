@@ -4462,12 +4462,22 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
-body {
+.container {
+  display: grid;
+  grid-template-areas: "sidebar header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
   width: 100%; }
-
-h1 {
-  font-size: 48px;
-  color: red; }
-
-h2 {
-  color: blue; }
+  .container .sidebar {
+    grid-area: sidebar;
+    background-color: red; }
+  .container .HEADER {
+    grid-area: header; }
+  .container .features {
+    grid-area: features; }
+  .container .story {
+    grid-area: story; }
+  .container .maisons {
+    grid-area: maisons; }
+  .container .galleries {
+    grid-area: galleries; }
+  .container .footer {
+    grid-area: footer; }
