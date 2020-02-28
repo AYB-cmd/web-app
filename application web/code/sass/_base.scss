@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+
+body {
+  font-family: font-Family: "Poppinsfamily=Josefin+Sans:300,400,400i|Nunito:300,300i";
+  font-size: 1.8rem;
+  color: $text-color-primary;
+  background-color: #fafafa;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+h1{
+    font-size: 5em;
+}
+h2{
+     font-size: 4em;
+}
+h3 {
+ font-size: 2rem;
+}
+h4 {
+    font-size: 1.6rem;
+}
