@@ -1,29 +1,20 @@
 .container {
+  color: white;
   display: grid;
   grid-template-areas: "sidebar header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
   grid-template-columns: 1fr 15fr;
   width: 100%; }
   .container .sidebar {
     grid-area: sidebar;
-    background-color: red; }
+    background-color: #756E6B; }
   .container .HEADER {
     grid-area: header;
-    height: 600px;
+    height: 70vh;
     display: grid;
     grid-template-columns: 12fr 3fr; }
     .container .HEADER .header {
-      background-color: yellow;
       display: grid;
       grid-template-rows: 2fr 8fr 2fr; }
-      .container .HEADER .header__logo-block {
-        background-color: black; }
-      .container .HEADER .header__title-block {
-        background-color: black;
-        opacity: 0.3; }
-      .container .HEADER .header__brands {
-        background-color: black; }
-    .container .HEADER .agent {
-      background-color: blue; }
   .container .features {
     grid-area: features;
     height: 800px;
@@ -44,3 +35,41 @@
     grid-area: footer;
     height: 400px;
     background-color: green; }
+
+.HEADER .header {
+  background-image: url(../img/gal--5.jpg);
+  background-size: cover; }
+  .HEADER .header__logo-block {
+    background-color: #55453C;
+    text-align: center; }
+  .HEADER .header__title-block {
+    color: black;
+    opacity: 0.6;
+    margin: 4.3em 0 2em 0;
+    text-align: center; }
+    .HEADER .header__title-block--title {
+      font-size: 2em; }
+    .HEADER .header__title-block--description {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #5F4A39;
+      width: 22rem;
+      margin: 0 auto 2em auto; }
+    .HEADER .header__title-block--btn {
+      width: 97px;
+      height: 28px;
+      color: white;
+      font-size: 16px;
+      background-color: #333333;
+      border: 1px solid black;
+      border-radius: 0.5em; }
+  .HEADER .header__brands {
+    background-color: black;
+    opacity: 0.5; }
+
+.HEADER .agent {
+  background-color: #635751;
+  border-radius: 1em 0 0 0; }
+  .HEADER .agent::before {
+    background-color: #55453C;
+    border-radius: 0em; }

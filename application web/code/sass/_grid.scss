@@ -1,4 +1,5 @@
 .container{
+    color: white;
     display: grid;
     grid-template-areas:    "sidebar header"
                             "sidebar features"
@@ -12,28 +13,26 @@
     .sidebar{
         grid-area: sidebar;
         
-        background-color: red;
+        background-color: #756E6B;
     }
  
         .HEADER{
             grid-area: header;
-            height: 600px;
+            height: 70vh;
             display: grid;
             grid-template-columns: 12fr 3fr;
             .header{
-                background-color: yellow;
                 display: grid;
                 grid-template-rows: 2fr 8fr 2fr;
                 &__logo-block{
-                    background-color: black;
-
+    
+                    
                     &--logo{
 
                     }
                 }
                 &__title-block{
-                    background-color: black;
-                    opacity: 0.3;
+                 
                   &--title{
                     
                   }
@@ -45,12 +44,12 @@
                   }
                 }
                 &__brands{
-                    background-color: black;
+                    
                 }
         
             }
             .agent{
-                background-color: blue;
+                
               &__title{
                   
               }

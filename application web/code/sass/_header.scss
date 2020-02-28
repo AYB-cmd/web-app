@@ -1,0 +1,66 @@
+.HEADER{
+   
+    .header{
+        background-image: url(../img/gal--5.jpg);
+        background-size: cover;
+        &__logo-block{
+            background-color: #55453C;
+            text-align: center;
+            &--logo{
+            //  style is inside the element at html
+            }
+        }
+        &__title-block{
+            color: black;
+            opacity: 0.6;
+            margin:4.3em 0 2em 0;
+
+            text-align: center;
+          
+          &--title{
+            font-size: 2em;
+            
+          }
+          &--description{
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #5F4A39;
+            width: 22rem;
+            margin:0 auto 2em auto;
+          }  
+          &--btn{
+            width: 97px;
+            height: 28px;
+            color:  white;
+            font-size: 16px;
+            background-color: #333333;
+            border: 1px solid black;
+            border-radius: 0.5em;
+          }
+        }
+        &__brands{
+            background-color: black;
+            opacity: 0.5;
+        }
+
+    }
+    .agent{
+        background-color: #635751;
+        border-radius: 1em 0 0 0;
+        &::before{
+            background-color: #55453C;
+            border-radius: 0em;
+        }
+      &__title{
+          
+      }
+      &--developer{
+          &--photo{
+
+          }
+          &--name{
+
+          }
+      }  
+    }
+}
