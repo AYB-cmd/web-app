@@ -10,22 +10,16 @@
 
 
 body {
-  font-family: font-Family: "Poppinsfamily=Josefin+Sans:300,400,400i|Nunito:300,300i";
-  font-size: 1.8rem;
-  color: $text-color-primary;
-  background-color: #fafafa;
+  font-family: "Poppinsfamily=Josefin+Sans:300,400,400i|Nunito:300,300i";
+  font-size: 8px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
 
 .container {
-  max-width: 1024px;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
+  
 }
 h1{
     font-size: 5em;

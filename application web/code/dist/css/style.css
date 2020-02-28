@@ -1,3 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+body {
+  font-family: "Poppinsfamily=Josefin+Sans:300,400,400i|Nunito:300,300i";
+  font-size: 8px; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
+h1 {
+  font-size: 5em; }
+
+h2 {
+  font-size: 4em; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.6rem; }
+
 .container {
   color: white;
   display: grid;
@@ -6,7 +35,8 @@
   width: 100%; }
   .container .sidebar {
     grid-area: sidebar;
-    background-color: #756E6B; }
+    min-width: 90px;
+    background-color: #645953; }
   .container .HEADER {
     grid-area: header;
     height: 70vh;
@@ -40,21 +70,19 @@
   background-image: url(../img/gal--5.jpg);
   background-size: cover; }
   .HEADER .header__logo-block {
-    background-color: #55453C;
+    background-color: #867A74;
     text-align: center; }
   .HEADER .header__title-block {
     color: black;
-    opacity: 0.6;
-    margin: 4.3em 0 2em 0;
     text-align: center; }
     .HEADER .header__title-block--title {
-      font-size: 2em; }
+      margin-top: 2em; }
     .HEADER .header__title-block--description {
-      font-size: 1.3em;
+      font-size: 3em;
       font-weight: bold;
       color: #5F4A39;
-      width: 22rem;
-      margin: 0 auto 2em auto; }
+      width: 32rem;
+      margin: 2em auto 2em auto; }
     .HEADER .header__title-block--btn {
       width: 97px;
       height: 28px;
@@ -64,12 +92,27 @@
       border: 1px solid black;
       border-radius: 0.5em; }
   .HEADER .header__brands {
-    background-color: black;
-    opacity: 0.5; }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    align-items: baseline; }
+    .HEADER .header__brands--img {
+      height: auto;
+      width: 20%;
+      margin: auto 2em auto 2em; }
+    .HEADER .header__brands .left {
+      margin-left: 4em; }
+    .HEADER .header__brands .right {
+      margin-right: 4em; }
+    .HEADER .header__brands img {
+      max-width: 100%; }
 
 .HEADER .agent {
-  background-color: #635751;
-  border-radius: 1em 0 0 0; }
+  background-color: #55453C;
+  border-radius: 1em 0 0 0;
+  min-width: 200px; }
   .HEADER .agent::before {
     background-color: #55453C;
     border-radius: 0em; }

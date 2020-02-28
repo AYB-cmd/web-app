@@ -12,8 +12,8 @@
     width: 100%;
     .sidebar{
         grid-area: sidebar;
-        
-        background-color: #756E6B;
+        min-width: 90px;
+        background-color: #645953;
     }
  
         .HEADER{
@@ -44,7 +44,9 @@
                   }
                 }
                 &__brands{
-                    
+                //    display: grid; 
+                //    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+                //    justify-content: space-between;
                 }
         
             }
