@@ -1,83 +1,89 @@
-.HEADER{
-   
-    .header{
-        background-image: url(../img/gal--5.jpg);
-        background-size: cover;
-        &__logo-block{
-            background-color: #867A74;
-            text-align: center;
-            &--logo{
-            //  style is inside the element at html
-            }
-        }
-        &__title-block{
-            color: black;
-            text-align: center;
-          
-          &--title{
-            margin-top: 2em;
-          }
-          &--description{
-              font-size: 3em;
-            font-weight: bold;
-            color: #5F4A39;
-            width: 32rem;
-            margin:2em auto 2em auto;
-          }  
-          &--btn{
-            width: 97px;
-            height: 28px;
-            color:  white;
-            font-size: 16px;
-            background-color: #333333;
-            border: 1px solid black;
-            border-radius: 0.5em;
-          }
-        }
-        &__brands{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            background-color: rgba(black, $alpha: 0.4);
-            width: 100%;
-            align-items: baseline;
-            &--img{
-
-                height: auto;
-                width: 20%;
-                margin: auto 2em auto 2em;
-            }
-            .left{
-                margin-left: 4em;
-            }
-            .right{
-                margin-right: 4em;
-            }
-            img{
-               max-width: 100%;
-               
-            }
-        }
-
-    }
-    .agent{
-        background-color: #55453C;
-        border-radius: 1em 0 0 0;
-        min-width: 200px;
-        &::before{
-            background-color: #55453C;
-            border-radius: 0em;
-        }
-      &__title{
-          
+.HEADER {
+  .header {
+    background-image: url(../img/gal--5.jpg);
+    background-size: cover;
+    background-position-x: -149px;
+    &__logo-block {
+      background-color: #867a74;
+      text-align: center;
+      &--logo {
+        //  style is inside the element at html
       }
-      &--developer{
-          &--photo{
-
-          }
-          &--name{
-
-          }
-      }  
     }
+    &__title-block {
+      color: black;
+      text-align: center;
+
+      &--title {
+        margin-top: 2.3em;
+      }
+      &--description {
+        font-size: 3em;
+        font-weight: bold;
+        color: #49443f;
+        width: 32rem;
+        margin: 0 auto 2em auto;
+      }
+      &--btn {
+        width: 97px;
+        height: 28px;
+        color: white;
+        font-size: 16px;
+        background-color: #333333;
+        border: 1px solid black;
+        border-radius: 0.5em;
+      }
+    }
+    &__brands {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rgba(black, $alpha: 0.4);
+      width: 100%;
+      align-items: baseline;
+      &--line {
+        width: 20%;
+        border-top: 1em solid white;
+      }
+      &--img {
+        height: auto;
+        width: 20%;
+        margin: auto 2em auto 2em;
+      }
+      .left {
+        margin-left: 4em;
+      }
+      .right {
+        margin-right: 4em;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .background- {
+    background-color: #867a74;
+    
+    height: 100%;
+    
+    .agent {
+      background-color: #635751 ;
+      border-radius: 2em 0 0 0;
+      min-width: 200px;
+
+      &__title {
+        color: #B49C82;
+      }
+      &--developer {
+          border: 1px solid black;
+          height: 100%;
+          width: 100%;
+        &--photo {
+        }
+        &--name {
+           background-color: red;
+        }
+      }
+    }
+  }
 }
