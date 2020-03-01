@@ -2,7 +2,7 @@
   .header {
     background-image: url(../img/gal--5.jpg);
     background-size: cover;
-    background-position-x: -81px;
+    background-position-x: -77px;
     // here is the header-bar
     &__logo-block {
       background-color: #867a74;
@@ -22,7 +22,7 @@
       &--description {
         font-size: 3em;
         font-weight: bold;
-        color: #49443f;
+        color: $sous-titre;
         width: 32rem;
         margin: 0 auto 2em auto;
       }
@@ -30,11 +30,12 @@
         width: 97px;
         height: 28px;
         color: white;
-        font-size: 16px;
-        background-color: #333333;
+        font-size: 1.5em;
+        background-color: #333333b6 ;
         border: 1px solid black;
         border-radius: 0.5em;
         cursor: pointer;
+        
       }
     }
     &__brands {
@@ -47,7 +48,7 @@
       align-items: baseline;
       
       p{
-        font-size: 1em;
+        font-size: 1.5em;
         color: #B19B81;
         position: absolute;
         margin: 0px 45%;
