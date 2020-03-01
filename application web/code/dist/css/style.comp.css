@@ -6,9 +6,18 @@
   box-sizing: border-box;
   text-decoration: none; }
 
+html {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
 body {
   font-family: "Poppinsfamily=Josefin+Sans:300,400,400i|Nunito:300,300i";
-  font-size: 8px; }
+  font-size: 8px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
 
 .container {
   width: 100%;
@@ -32,10 +41,16 @@ h4 {
   display: grid;
   grid-template-areas: "sidebar header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
   grid-template-columns: 1fr 15fr;
-  width: 100%; }
+  width: 100%;
+  padding: 0; }
   .container .sidebar {
     grid-area: sidebar;
-    background-color: #756E6B; }
+    min-width: 90px;
+    background-color: #645953; }
+    .container .sidebar__block {
+      display: grid;
+      grid-column: auto;
+      justify-content: center; }
   .container .HEADER {
     grid-area: header;
     height: 70vh;
@@ -44,6 +59,13 @@ h4 {
     .container .HEADER .header {
       display: grid;
       grid-template-rows: 2fr 8fr 2fr; }
+    .container .HEADER .agent {
+      display: grid;
+      grid-template-rows: 1fr 2fr 3fr 3fr 3fr;
+      height: 100%;
+      justify-content: center; }
+      .container .HEADER .agent__title {
+        border: 1px solid black; }
   .container .features {
     grid-area: features;
     height: 800px;
@@ -65,23 +87,28 @@ h4 {
     height: 400px;
     background-color: green; }
 
+.container .sidebar__block {
+  margin-top: 1em; }
+  .container .sidebar__block--menu {
+    cursor: pointer; }
+
 .HEADER .header {
   background-image: url(../img/gal--5.jpg);
   background-size: cover; }
   .HEADER .header__logo-block {
-    background-color: #55453C;
+    background-color: #867a74;
     text-align: center; }
   .HEADER .header__title-block {
     color: black;
     text-align: center; }
     .HEADER .header__title-block--title {
-      font-size: 2em;
-      margin-top: 1em; }
+      margin-top: 2em; }
     .HEADER .header__title-block--description {
+      font-size: 3em;
       font-weight: bold;
-      color: #5F4A39;
+      color: #49443f;
       width: 32rem;
-      margin: 1em auto 2em auto; }
+      margin: 2em auto 2em auto; }
     .HEADER .header__title-block--btn {
       width: 97px;
       height: 28px;
@@ -91,12 +118,35 @@ h4 {
       border: 1px solid black;
       border-radius: 0.5em; }
   .HEADER .header__brands {
-    background-color: black;
-    opacity: 0.5; }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    align-items: baseline; }
+    .HEADER .header__brands--line {
+      width: 20%;
+      border-top: 1em solid white; }
+    .HEADER .header__brands--img {
+      height: auto;
+      width: 20%;
+      margin: auto 2em auto 2em; }
+    .HEADER .header__brands .left {
+      margin-left: 4em; }
+    .HEADER .header__brands .right {
+      margin-right: 4em; }
+    .HEADER .header__brands img {
+      max-width: 100%; }
 
 .HEADER .agent {
   background-color: #635751;
-  border-radius: 1em 0 0 0; }
-  .HEADER .agent::before {
-    background-color: #55453C;
-    border-radius: 0em; }
+  border-radius: 2em 0 0 0;
+  min-width: 200px; }
+  .HEADER .agent__title {
+    color: #B49C82; }
+  .HEADER .agent--developer {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%; }
+    .HEADER .agent--developer--name {
+      background-color: red; }
