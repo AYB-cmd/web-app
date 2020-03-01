@@ -2,7 +2,8 @@
   .header {
     background-image: url(../img/gal--5.jpg);
     background-size: cover;
-    background-position-x: -149px;
+    background-position-x: -81px;
+    // here is the header-bar
     &__logo-block {
       background-color: #867a74;
       text-align: center;
@@ -10,12 +11,13 @@
         //  style is inside the element at html
       }
     }
+    // this is the left.side of the header
     &__title-block {
       color: black;
       text-align: center;
 
       &--title {
-        margin-top: 2.3em;
+        margin-top: 11%;
       }
       &--description {
         font-size: 3em;
@@ -32,32 +34,63 @@
         background-color: #333333;
         border: 1px solid black;
         border-radius: 0.5em;
+        cursor: pointer;
       }
     }
     &__brands {
+      position: relative;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       background-color: rgba(black, $alpha: 0.4);
       width: 100%;
       align-items: baseline;
-      &--line {
-        width: 20%;
-        border-top: 1em solid white;
+      
+      p{
+        font-size: 1em;
+        color: #B19B81;
+        position: absolute;
+        margin: 0px 45%;
+        font-weight: bold;
+        text-align: center;
+        
       }
+      &--line-left{
+        display: inline;
+        width:40%;
+        border-top: 1em solid white;
+        position: absolute;
+        border-radius: 0 20px 20px 0;
+        
+            
+      }
+      &--line-right{
+        display: inline;
+        width:40%;
+        border-top: 1em solid white;
+        position: absolute;
+        border-radius:  20px 0 0 20px ;
+        right: 0;
+      }
+      
       &--img {
+        
         height: auto;
         width: 20%;
-        margin: auto 2em auto 2em;
+        margin: 4em 2em auto 2em;
+      
       }
       .left {
         margin-left: 4em;
+      
+        }
       }
       .right {
         margin-right: 4em;
       }
       img {
         max-width: 100%;
+        
       }
     }
   }
@@ -65,25 +98,38 @@
     background-color: #867a74;
     
     height: 100%;
-    
+
+    // LEFT.SIDE OF THE HEADER
     .agent {
       background-color: #635751 ;
       border-radius: 2em 0 0 0;
       min-width: 200px;
-
+        text-align: center;
       &__title {
-        color: #B49C82;
+        border: none !important;
       }
-      &--developer {
-          border: 1px solid black;
-          height: 100%;
-          width: 100%;
+      &__developer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         &--photo {
+            width: 70px;
+            height: 70px;
+            margin:0 auto ;
+            border-radius: 50%;
         }
         &--name {
-           background-color: red;
+            margin-top: 1em;
+            font-size: 2em;
+            color: #B49C82;
+            font-weight: bold;
+            span{
+                color: white;
+                font-size: 0.6em;
+                
+            }
         }
       }
     }
   }
-}
+

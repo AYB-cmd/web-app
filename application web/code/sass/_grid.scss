@@ -24,7 +24,6 @@
  
         .HEADER{
             grid-area: header;
-            height: 70vh;
             display: grid;
             grid-template-columns: 12fr 3fr;
             .header{
@@ -58,7 +57,7 @@
             }
             .agent{
                 display: grid;
-                grid-template-rows: 1fr 2fr 3fr 3fr 3fr;
+                grid-template-rows: 0.5fr 0.5fr 3fr 3fr 3fr;
                 height: 100%;
                 justify-content: center;
               &__title{

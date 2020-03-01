@@ -4476,9 +4476,9 @@ html {
   margin: 0; }
 
 body {
-  font-family: "Poppinsfamily=Josefin+Sans:300,400,400i|Nunito:300,300i";
+  font-family: "Josefin Sans";
   font-size: 8px;
-  width: 100%;
+  width: 1024px;
   margin: 0;
   padding: 0;
   text-decoration: none; }
@@ -4517,12 +4517,11 @@ h4 {
       justify-content: center; }
   .container .HEADER {
     grid-area: header;
-    height: 70vh;
     display: grid;
     grid-template-columns: 12fr 3fr; }
     .container .HEADER .header {
       display: grid;
-      grid-template-rows: 2fr 8fr 2fr; }
+      grid-template-rows: 1fr 7fr 1fr; }
     .container .HEADER .agent {
       display: grid;
       grid-template-rows: 1fr 2fr 3fr 3fr 3fr;
@@ -4558,7 +4557,8 @@ h4 {
 
 .HEADER .header {
   background-image: url(../img/gal--5.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-position-x: -81px; }
   .HEADER .header__logo-block {
     background-color: #867a74;
     text-align: center; }
@@ -4566,13 +4566,13 @@ h4 {
     color: black;
     text-align: center; }
     .HEADER .header__title-block--title {
-      margin-top: 2em; }
+      margin-top: 11%; }
     .HEADER .header__title-block--description {
       font-size: 3em;
       font-weight: bold;
       color: #49443f;
       width: 32rem;
-      margin: 2em auto 2em auto; }
+      margin: 0 auto 2em auto; }
     .HEADER .header__title-block--btn {
       width: 97px;
       height: 28px;
@@ -4580,37 +4580,55 @@ h4 {
       font-size: 16px;
       background-color: #333333;
       border: 1px solid black;
-      border-radius: 0.5em; }
+      border-radius: 0.5em;
+      cursor: pointer; }
   .HEADER .header__brands {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     align-items: baseline; }
-    .HEADER .header__brands--line {
-      width: 20%;
-      border-top: 1em solid white; }
+    .HEADER .header__brands p {
+      font-size: 1em;
+      color: #B19B81;
+      position: absolute;
+      margin: 0px 45%;
+      font-weight: bold;
+      text-align: center; }
+    .HEADER .header__brands--line-left {
+      display: inline;
+      width: 40%;
+      border-top: 1em solid white;
+      position: absolute;
+      border-radius: 0 20px 20px 0; }
+    .HEADER .header__brands--line-right {
+      display: inline;
+      width: 40%;
+      border-top: 1em solid white;
+      position: absolute;
+      border-radius: 20px 0 0 20px;
+      right: 0; }
     .HEADER .header__brands--img {
       height: auto;
       width: 20%;
       margin: auto 2em auto 2em; }
     .HEADER .header__brands .left {
       margin-left: 4em; }
-    .HEADER .header__brands .right {
-      margin-right: 4em; }
-    .HEADER .header__brands img {
-      max-width: 100%; }
+  .HEADER .header .right {
+    margin-right: 4em; }
+  .HEADER .header img {
+    max-width: 100%; }
 
-.HEADER .agent {
-  background-color: #635751;
-  border-radius: 2em 0 0 0;
-  min-width: 200px; }
-  .HEADER .agent__title {
-    color: #B49C82; }
-  .HEADER .agent--developer {
-    border: 1px solid black;
-    height: 100%;
-    width: 100%; }
-    .HEADER .agent--developer--name {
-      background-color: red; }
+.background- {
+  background-color: #867a74;
+  height: 100%; }
+  .background- .agent {
+    background-color: #635751;
+    border-radius: 2em 0 0 0;
+    min-width: 200px; }
+    .background- .agent__title {
+      font-weight: bolder; }
+    .background- .agent--developer--name {
+      color: red !important; }
