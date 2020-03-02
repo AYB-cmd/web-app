@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+.HEADER{
+   
+    .header{
+        background-image: url(../img/gal--5.jpg);
+        background-size: cover;
+        &__logo-block{
+            background-color: #55453C;
+            text-align: center;
+            &--logo{
+            //  style is inside the element at html //
+            }
+        }
+        &__title-block{
+            color: black;
+            opacity: 0.6;
+            margin:4.3em 0 2em 0;
+=======
 .HEADER {
   .header {
     background-image: url(../img/gal--5.jpg);
@@ -15,6 +33,7 @@
     &__title-block {
       color: black;
       text-align: center;
+>>>>>>> 6ceb5e252381bdad0deccf6ff95d96adf1da85eb
 
       &--title {
         margin-top: 11%;
