@@ -8,7 +8,7 @@
                             "sidebar galleries"
                             "sidebar footer" ;
                             
-    grid-template-columns: 1fr 15fr;
+    grid-template-columns: 1fr 15fr ;
     width: 100%;
     padding: 0;
     .sidebar{
@@ -49,9 +49,7 @@
                   }
                 }
                 &__brands{
-                //    display: grid; 
-                //    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-                //    justify-content: space-between;
+                
                 }
         
             }

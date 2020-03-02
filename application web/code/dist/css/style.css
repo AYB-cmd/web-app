@@ -118,6 +118,9 @@ h4 {
       border: 1px solid black;
       border-radius: 0.5em;
       cursor: pointer; }
+      .HEADER .header__title-block--btn:hover {
+        color: black;
+        background-color: white; }
   .HEADER .header__brands {
     position: relative;
     display: flex;
