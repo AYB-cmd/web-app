@@ -10,20 +10,25 @@
                             
     grid-template-columns: 1fr 15fr;
     width: 100%;
+    padding: 0;
     .sidebar{
         grid-area: sidebar;
-        
-        background-color: #756E6B;
+        min-width: 90px;
+        background-color: #645953;
+        &__block{
+            display: grid;
+            grid-column: auto;;
+            justify-content: center;
+        }
     }
  
         .HEADER{
             grid-area: header;
-            height: 70vh;
             display: grid;
             grid-template-columns: 12fr 3fr;
             .header{
                 display: grid;
-                grid-template-rows: 2fr 8fr 2fr;
+                grid-template-rows: 1fr 7fr 1fr;
                 &__logo-block{
     
                     
@@ -44,21 +49,26 @@
                   }
                 }
                 &__brands{
-                    
+                //    display: grid; 
+                //    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+                //    justify-content: space-between;
                 }
         
             }
             .agent{
-                
+                display: grid;
+                grid-template-rows: 0.5fr 0.5fr 3fr 3fr 3fr;
+                height: 100%;
+                justify-content: center;
               &__title{
-                  
+                  border: 1px solid black;
               }
               &--developer{
                   &--photo{
 
                   }
                   &--name{
-
+                    
                   }
               }  
             }
