@@ -1,0 +1,12 @@
+.container{
+  
+    .sidebar{
+       &__block{
+         margin-top: 1em;
+            &--menu{
+              cursor: pointer;
+           
+            }       
+        }  
+    }
+}

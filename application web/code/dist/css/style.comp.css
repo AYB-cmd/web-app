@@ -1,9 +1,189 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+html {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
 body {
-  width: 100%; }
+  font-family: "Josefin Sans";
+  font-size: 8px;
+  width: 1024px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem; }
 
 h1 {
-  font-size: 48px;
-  color: red; }
+  font-size: 5em; }
 
 h2 {
-  color: blue; }
+  font-size: 4em; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.6rem; }
+
+.container {
+  color: white;
+  display: grid;
+  grid-template-areas: ". header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
+  grid-template-columns: 1fr 15fr;
+  width: 100%;
+  padding: 0; }
+  .container .sidebar {
+    grid-area: sidebar;
+    min-width: 90px;
+    background-color: #645953; }
+    .container .sidebar__block {
+      display: grid;
+      grid-column: auto;
+      justify-content: center; }
+  .container .HEADER {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 12fr 3fr; }
+    .container .HEADER .header {
+      display: grid;
+      grid-template-rows: 1fr 7fr 1fr; }
+    .container .HEADER .agent {
+      display: grid;
+      grid-template-rows: 0.5fr 0.5fr 3fr 3fr 3fr;
+      height: 100%;
+      justify-content: center; }
+      .container .HEADER .agent__title {
+        border: 1px solid black; }
+  .container .features {
+    grid-area: features;
+    height: 800px;
+    background-color: white; }
+  .container .story {
+    grid-area: story;
+    height: 800px;
+    background-color: black; }
+  .container .maisons {
+    grid-area: maisons;
+    height: 800px;
+    background-color: white; }
+  .container .galleries {
+    grid-area: galleries;
+    height: 800px;
+    background-color: black; }
+  .container .footer {
+    grid-area: footer;
+    height: 400px;
+    background-color: green; }
+
+.container .sidebar__block {
+  margin-top: 1em; }
+  .container .sidebar__block--menu {
+    cursor: pointer; }
+
+.HEADER .header {
+  background-image: url(../img/gal--5.jpg);
+  background-size: cover;
+  background-position-x: -77px; }
+  .HEADER .header__logo-block {
+    background-color: #867a74;
+    text-align: center; }
+  .HEADER .header__title-block {
+    color: black;
+    text-align: center; }
+    .HEADER .header__title-block--title {
+      margin-top: 11%; }
+    .HEADER .header__title-block--description {
+      font-size: 3em;
+      font-weight: bold;
+      color: #49443F;
+      width: 32rem;
+      margin: 0 auto 2em auto; }
+    .HEADER .header__title-block--btn {
+      width: 97px;
+      height: 28px;
+      color: white;
+      font-size: 1.5em;
+      background-color: #333333b6;
+      border: 1px solid black;
+      border-radius: 0.5em;
+      cursor: pointer; }
+      .HEADER .header__title-block--btn:hover {
+        color: black;
+        background-color: white; }
+  .HEADER .header__brands {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    align-items: baseline; }
+    .HEADER .header__brands p {
+      font-size: 1.5em;
+      color: #B19B81;
+      position: absolute;
+      margin: 0px 45%;
+      font-weight: bold;
+      text-align: center; }
+    .HEADER .header__brands--line-left {
+      display: inline;
+      width: 40%;
+      border-top: 1em solid white;
+      position: absolute;
+      border-radius: 0 20px 20px 0; }
+    .HEADER .header__brands--line-right {
+      display: inline;
+      width: 40%;
+      border-top: 1em solid white;
+      position: absolute;
+      border-radius: 20px 0 0 20px;
+      right: 0; }
+    .HEADER .header__brands--img {
+      height: auto;
+      width: 20%;
+      margin: 4em 2em auto 2em; }
+    .HEADER .header__brands .left {
+      margin-left: 4em; }
+  .HEADER .header .right {
+    margin-right: 4em; }
+  .HEADER .header img {
+    max-width: 100%; }
+
+.background- {
+  background-color: #867a74;
+  height: 100%; }
+  .background- .agent {
+    background-color: #635751;
+    border-radius: 2em 0 0 0;
+    min-width: 200px;
+    text-align: center; }
+    .background- .agent__title {
+      border: none !important; }
+    .background- .agent__developer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .background- .agent__developer--photo {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        border-radius: 50%; }
+      .background- .agent__developer--name {
+        margin-top: 1em;
+        font-size: 2em;
+        color: #B49C82;
+        font-weight: bold; }
+        .background- .agent__developer--name span {
+          color: white;
+          font-size: 0.6em; }

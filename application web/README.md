@@ -1,4 +1,4 @@
-# Booking-front-app
+nmp init# Booking-front-app
 
 ## Welcome! 👋
 
