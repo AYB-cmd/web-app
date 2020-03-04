@@ -107,7 +107,8 @@ h4 {
 .HEADER .header {
   background-image: url(../img/gal--5.jpg);
   background-size: cover;
-  background-position-x: -77px; }
+  background-position-x: -77px;
+  max-height: 70vh; }
   .HEADER .header__logo-block {
     background-color: #867a74;
     text-align: center; }
