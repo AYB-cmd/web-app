@@ -66,9 +66,26 @@ h4 {
       .container .HEADER .agent__title {
         border: 1px solid black; }
   .container .features {
-    grid-area: features;
-    height: 800px;
-    background-color: white; }
+    grid-area: features; }
+    .container .features .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      text-align: center; }
+      .container .features .cards .card1 {
+        grid-area: 1 / 1 / 2 / 2; }
+      .container .features .cards .card2 {
+        grid-area: 1 / 2 / 2 / 3; }
+      .container .features .cards .card3 {
+        grid-area: 1 / 3 / 2 / 4; }
+      .container .features .cards .card4 {
+        grid-area: 2 / 1 / 3 / 2; }
+      .container .features .cards .card5 {
+        grid-area: 2 / 2 / 3 / 3; }
+      .container .features .cards .card6 {
+        grid-area: 2 / 3 / 3 / 4; }
   .container .story {
     grid-area: story;
     height: 800px;
@@ -187,3 +204,17 @@ h4 {
         .background- .agent__developer--name span {
           color: white;
           font-size: 0.6em; }
+
+.features {
+  background-color: red;
+  height: 2000;
+  width: 100%;
+  text-align: center; }
+  .features-title {
+    text-align: center; }
+  .features .cards {
+    text-align: center; }
+    .features .cards-card {
+      height: 50vh; }
+    .features .cards .cards_icon {
+      text-align: center; }
