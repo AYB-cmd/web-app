@@ -39,7 +39,12 @@ h4 {
 .container {
   color: white;
   display: grid;
-  grid-template-areas: "sidebar header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
+  grid-template-areas: "sidebar header"
+ "sidebar features"
+ "sidebar story"
+ "sidebar maisons"
+ "sidebar galleries"
+ "sidebar footer";
   grid-template-columns: 1fr 15fr;
   width: 100%;
   padding: 0; }
@@ -110,8 +115,19 @@ h4 {
     background-color: black; }
   .container .footer {
     grid-area: footer;
-    height: 400px;
-    background-color: green; }
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+    .container .footer__nav-left {
+      grid-area: 2 / 2 / 6 / 6; }
+    .container .footer__logo {
+      grid-area: 2 / 6 / 6 / 11; }
+    .container .footer__nav-right {
+      grid-area: 2 / 11 / 6 / 15; }
+    .container .footer__contact {
+      grid-area: 6 / 2 / 7 / 15; }
 
 .container .sidebar__block {
   margin-top: 1em; }
@@ -202,8 +218,8 @@ h4 {
       flex-direction: column;
       justify-content: center; }
       .background- .agent__developer--photo {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         margin: 0 auto;
         border-radius: 50%; }
       .background- .agent__developer--name {
@@ -212,6 +228,7 @@ h4 {
         color: #B49C82;
         font-weight: bold; }
         .background- .agent__developer--name span {
+          margin-top: 0.3em;
           color: white;
           font-size: 0.6em; }
 
@@ -223,3 +240,67 @@ h4 {
     text-align: center; }
   .features .cards .card {
     height: 50vh; }
+=======
+          font-size: 1em; }
+
+.footer {
+  background-color: #514E4C;
+  text-align: center;
+  height: 50vh;
+  width: 100%; }
+  .footer__nav-left {
+    display: table;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.5); }
+    .footer__nav-left--list {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 2vw;
+      list-style: none; }
+  .footer__logo {
+    margin-top: 15%;
+    width: 100%;
+    height: 100%; }
+  .footer__nav-right {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white; }
+    .footer__nav-right--list {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 2vw;
+      list-style: none; }
+  .footer__contact {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+    height: 100%;
+    font-size: 2em; }
+    .footer__contact--copyright {
+      font-weight: bold; }
+    .footer__contact--link {
+      color: #B49C82; }
+    .footer__contact--rights {
+      font-size: 0.5em; }
+    .footer__contact--email {
+      color: white;
+      border: none;
+      min-height: 25px;
+      min-width: 180px;
+      background-color: rgba(51, 51, 51, 0.5); }
+    .footer__contact--btn {
+      color: white;
+      border: none;
+      min-height: 25px;
+      min-width: 7em;
+      background-color: #333333; }
+>>>>>>> 83ba458c6b80061492bc6843ff34cc70c84e9fae

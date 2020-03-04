@@ -118,8 +118,8 @@
           flex-direction: column;
           justify-content: center;
         &--photo {
-            width: 70px;
-            height: 70px;
+            width: 90px;
+            height: 90px;
             margin:0 auto ;
             border-radius: 50%;
         }
@@ -129,8 +129,9 @@
             color: #B49C82;
             font-weight: bold;
             span{
+              margin-top: 0.3em;
                 color: white;
-                font-size: 0.6em;
+                font-size: 1em;
                 
             }
         }
