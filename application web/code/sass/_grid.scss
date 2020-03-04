@@ -8,7 +8,7 @@
                             "sidebar galleries"
                             "sidebar footer" ;
                             
-    grid-template-columns: 1fr 15fr;
+    grid-template-columns: 1fr 15fr ;
     width: 100%;
     padding: 0;
     .sidebar{
@@ -49,9 +49,7 @@
                   }
                 }
                 &__brands{
-                //    display: grid; 
-                //    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-                //    justify-content: space-between;
+                
                 }
         
             }
@@ -77,6 +75,7 @@
             grid-area: features;
             height: 800px;
             background-color: white;
+            
         }
         .story{
             grid-area: story;
@@ -130,8 +129,33 @@
         }
         .footer{
             grid-area: footer;
-            height: 400px;
-            background-color: green;
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            &__nav-left{
+                grid-area: 2 / 2 / 6 / 6;
+                &--list{
+
+                }
+            }
+            &__logo{
+                grid-area: 2 / 6 / 6 / 11;
+            }
+            &__nav-right{
+                grid-area: 2 / 11 / 6 / 15; 
+                &--list{
+                    
+                }
+            }
+            &__blank{
+                grid-area: 6 / 2 / 7 / 15;
+            }
+            &__contact{
+                grid-area: 7 / 2 / 8 / 15;
+            }
+             
         }
-        
+
     }

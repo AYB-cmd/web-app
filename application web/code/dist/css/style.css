@@ -98,8 +98,21 @@ h4 {
     background-color: black; }
   .container .footer {
     grid-area: footer;
-    height: 400px;
-    background-color: green; }
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+    .container .footer__nav-left {
+      grid-area: 2 / 2 / 6 / 6; }
+    .container .footer__logo {
+      grid-area: 2 / 6 / 6 / 11; }
+    .container .footer__nav-right {
+      grid-area: 2 / 11 / 6 / 15; }
+    .container .footer__blank {
+      grid-area: 6 / 2 / 7 / 15; }
+    .container .footer__contact {
+      grid-area: 7 / 2 / 8 / 15; }
 
 .container .sidebar__block {
   margin-top: 1em; }
@@ -109,7 +122,8 @@ h4 {
 .HEADER .header {
   background-image: url(../img/gal--5.jpg);
   background-size: cover;
-  background-position-x: -77px; }
+  background-position-x: -77px;
+  max-height: 70vh; }
   .HEADER .header__logo-block {
     background-color: #867a74;
     text-align: center; }
@@ -133,6 +147,9 @@ h4 {
       border: 1px solid black;
       border-radius: 0.5em;
       cursor: pointer; }
+      .HEADER .header__title-block--btn:hover {
+        color: black;
+        background-color: white; }
   .HEADER .header__brands {
     position: relative;
     display: flex;
@@ -187,8 +204,8 @@ h4 {
       flex-direction: column;
       justify-content: center; }
       .background- .agent__developer--photo {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         margin: 0 auto;
         border-radius: 50%; }
       .background- .agent__developer--name {
@@ -197,7 +214,9 @@ h4 {
         color: #B49C82;
         font-weight: bold; }
         .background- .agent__developer--name span {
+          margin-top: 0.3em;
           color: white;
+<<<<<<< HEAD
           font-size: 0.6em; }
 
 .maisons__card {
@@ -258,3 +277,87 @@ h4 {
       padding: .4em 2em .4em 2em;
       margin: 7px;
       font-family: Josefin sans-serif; }
+=======
+          font-size: 1em; }
+
+.footer {
+  background-color: #514E4C;
+  text-align: center;
+  height: 50vh;
+  width: 100%;
+  color: white; }
+  .footer__nav-left {
+    display: table;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.5); }
+    .footer__nav-left--list {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1.5vw;
+      list-style: none; }
+      .footer__nav-left--list li a {
+        color: white;
+        text-decoration: underline; }
+  .footer__logo {
+    margin-top: 15%;
+    width: 100%;
+    height: 100%; }
+  .footer__nav-right {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.5); }
+    .footer__nav-right--list {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1.5vw;
+      list-style: none;
+      text-decoration: underline; }
+  .footer__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+    height: 100%;
+    font-size: 3em; }
+    .footer__contact--copyright {
+      font-weight: bold; }
+    .footer__contact--link {
+      color: #B49C82; }
+    .footer__contact--rights {
+      font-size: 0.5em; }
+    .footer__contact--email {
+      border-radius: 0.5em;
+      color: blackq;
+      border: none;
+      min-height: 25px;
+      min-width: 180px;
+      background-color: rgba(51, 51, 51, 0.5); }
+      .footer__contact--email:hover {
+        background-color: white;
+        opacity: 0.8;
+        min-height: 30px;
+        min-width: 250px;
+        transition: 0.5s ease;
+        border: none; }
+    .footer__contact--btn {
+      border-radius: 0.5em;
+      color: white;
+      border: none;
+      min-height: 25px;
+      min-width: 7em;
+      background-color: #333333;
+      cursor: pointer; }
+      .footer__contact--btn:hover {
+        min-height: 30px;
+        background-color: white;
+        color: black;
+        opacity: 0.6;
+        min-width: 8em;
+        transition: 0.5s ease; }
+>>>>>>> c4e69cc4947108ebd170318af4d66dda1d9ee377

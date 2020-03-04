@@ -1,2 +1,18 @@
+<<<<<<< HEAD
 
 
+=======
+@mixin grid-features($cols,$mgn) {
+    float: left;
+    margin-right: $mgn;
+    margin-bottom: $mgn;
+    width:((100%-((cols-1)*$mgn))/$cols);
+    &:nth-child(#{$cols}n){
+        margin-right: 0;
+    }
+
+}
+#features li{
+    @include grid-features(3, 2%)
+}
+>>>>>>> c4e69cc4947108ebd170318af4d66dda1d9ee377

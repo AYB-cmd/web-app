@@ -3,6 +3,7 @@
     background-image: url(../img/gal--5.jpg);
     background-size: cover;
     background-position-x: -77px;
+    max-height: 70vh;
     // here is the header-bar
     &__logo-block {
       background-color: #867a74;
@@ -35,6 +36,10 @@
         border: 1px solid black;
         border-radius: 0.5em;
         cursor: pointer;
+        &:hover{
+            color: black;
+            background-color: white;
+        }
         
       }
     }
@@ -114,8 +119,8 @@
           flex-direction: column;
           justify-content: center;
         &--photo {
-            width: 70px;
-            height: 70px;
+            width: 90px;
+            height: 90px;
             margin:0 auto ;
             border-radius: 50%;
         }
@@ -125,12 +130,12 @@
             color: #B49C82;
             font-weight: bold;
             span{
+              margin-top: 0.3em;
                 color: white;
-                font-size: 0.6em;
+                font-size: 1em;
                 
             }
         }
       }
     }
   }
-
