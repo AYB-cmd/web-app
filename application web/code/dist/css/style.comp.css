@@ -39,7 +39,7 @@ h4 {
 .container {
   color: white;
   display: grid;
-  grid-template-areas: ". header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
+  grid-template-areas: "sidebar header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
   grid-template-columns: 1fr 15fr;
   width: 100%;
   padding: 0; }
@@ -83,8 +83,19 @@ h4 {
     background-color: black; }
   .container .footer {
     grid-area: footer;
-    height: 400px;
-    background-color: green; }
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+    .container .footer__nav-left {
+      grid-area: 2 / 2 / 6 / 6; }
+    .container .footer__logo {
+      grid-area: 2 / 6 / 6 / 11; }
+    .container .footer__nav-right {
+      grid-area: 2 / 11 / 6 / 15; }
+    .container .footer__contact {
+      grid-area: 6 / 2 / 7 / 15; }
 
 .container .sidebar__block {
   margin-top: 1em; }
@@ -175,8 +186,8 @@ h4 {
       flex-direction: column;
       justify-content: center; }
       .background- .agent__developer--photo {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         margin: 0 auto;
         border-radius: 50%; }
       .background- .agent__developer--name {
@@ -185,5 +196,27 @@ h4 {
         color: #B49C82;
         font-weight: bold; }
         .background- .agent__developer--name span {
+          margin-top: 0.3em;
           color: white;
-          font-size: 0.6em; }
+          font-size: 1em; }
+
+.footer {
+  background-color: #514E4C;
+  text-align: center;
+  height: 50vh; }
+  .footer__nav-left {
+    color: black;
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.5); }
+    .footer__nav-left--list {
+      font-size: 4em;
+      margin-top: 10%;
+      list-style: none; }
+  .footer__nav-right {
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: black; }
+    .footer__nav-right--list {
+      font-size: 4em;
+      margin-top: 10%;
+      list-style: none; }
