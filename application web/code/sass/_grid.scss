@@ -90,28 +90,28 @@
             grid-column-gap: 50px;
             grid-row-gap: 50px;
                  &__card{
-                    
-                }
-                .card1 { 
                     grid-area: 1 / 1 / 2 / 2;
                 }
+                // .card1 { 
+                //     grid-area: 1 / 1 / 2 / 2;
+                // }
             
-                .card2 { 
-                    grid-area: 1 / 2 / 2 / 3;
+                // .card2 { 
+                //     grid-area: 1 / 2 / 2 / 3;
                   
-                }
+                // }
                 
-                .card3 {
-                    grid-area: 1 / 3 / 2 / 4;
-                }
+                // .card3 {
+                //     grid-area: 1 / 3 / 2 / 4;
+                // }
                   
-                .card4 { 
-                    grid-area: 2 / 1 / 3 / 2; 
+                // .card4 { 
+                //     grid-area: 2 / 1 / 3 / 2; 
                   
-                }
+                // }
                   
-                .card5 { 
-                    grid-area: 2 / 2 / 3 / 3;
+                // .card5 { 
+                //     grid-area: 2 / 2 / 3 / 3;
                   
                 }
                 
@@ -120,42 +120,41 @@
                 
                 }
              
-           
-        }
-        .galleries{
-            grid-area: galleries;
-            height: 800px;
-            background-color: black;
-        }
-        .footer{
-            grid-area: footer;
-            display: grid;
-            grid-template-columns: repeat(15, 1fr);
-            grid-template-rows: repeat(7, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            &__nav-left{
-                grid-area: 2 / 2 / 6 / 6;
-                &--list{
-
+                .galleries{
+                    grid-area: galleries;
+                    height: 800px;
+                    background-color: black;
                 }
-            }
-            &__logo{
-                grid-area: 2 / 6 / 6 / 11;
-            }
-            &__nav-right{
-                grid-area: 2 / 11 / 6 / 15; 
-                &--list{
-                    
+                .footer{
+                    grid-area: footer;
+                    display: grid;
+                    grid-template-columns: repeat(15, 1fr);
+                    grid-template-rows: repeat(7, 1fr);
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                    &__nav-left{
+                        grid-area: 2 / 2 / 6 / 6;
+                        &--list{
+        
+                        }
+                    }
+                    &__logo{
+                        grid-area: 2 / 6 / 6 / 11;
+                    }
+                    &__nav-right{
+                        grid-area: 2 / 11 / 6 / 15; 
+                        &--list{
+                            
+                        }
+                    }
+                    &__blank{
+                        grid-area: 6 / 2 / 7 / 15;
+                    }
+                    &__contact{
+                        grid-area: 7 / 2 / 8 / 15;
+                    }
+                     
                 }
-            }
-            &__blank{
-                grid-area: 6 / 2 / 7 / 15;
-            }
-            &__contact{
-                grid-area: 7 / 2 / 8 / 15;
-            }
-             
         }
-
-    }
+        
+    

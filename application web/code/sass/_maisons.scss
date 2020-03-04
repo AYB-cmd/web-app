@@ -1,10 +1,8 @@
 .maisons{
-    
+    margin: 3% 7%;
+    justify-items: center;
  &__card{
         padding: 0;
-        position: relative;
-        left:50%;
-        transform: translateX(-50%);
         border: 1PX solid rgb(148, 148, 148);
         width: 70%;
         background-color: rgb(189, 188, 188);
@@ -17,6 +15,7 @@
         top:-6%;
         padding: .5em;
         opacity: 0.6;
+       
         input{
             background-color: white;
             color: black;
@@ -37,7 +36,7 @@
     }
     
     &--content{
-    
+       
      color: black;
      display: flex;
      justify-content: space-around;
@@ -46,27 +45,30 @@
     border-bottom: 2PX solid #1222;
     .first-lign{
         margin-bottom: 30px;
-        
+        .font{
+            margin-right: .4em;
+        }
     }
-    .font{
-        margin-right: .4em;
-    }
+
      ul{
         list-style: none;
         //padding-bottom: 2em;
+     
         .first-lign{
-            padding-bottom: 1em;
+            padding-bottom: 0em;
+            .font{
+                margin-right: .4em;
+            }
         }
      }
-     .font{
-        margin-right: .4em;
-    }
+     
       
     }
    
     &--btn{
         position: relative;
         padding: .5em;
+        
         Button{
             background-color: black;
             color: white;
@@ -75,6 +77,8 @@
             padding: .4em 2em .4em 2em ;
             margin: 7px;
             font-family: Josefin sans-serif
+          
+      
             
         }
      }
