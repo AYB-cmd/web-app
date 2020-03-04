@@ -260,8 +260,6 @@ h4 {
       min-height: 25px;
       min-width: 180px;
       background-color: rgba(51, 51, 51, 0.5); }
-      .footer__contact--email::placeholder {
-        margin-left: 10em; }
       .footer__contact--email:hover {
         background-color: white;
         opacity: 0.8;
