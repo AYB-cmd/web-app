@@ -94,8 +94,10 @@ h4 {
       grid-area: 2 / 6 / 6 / 11; }
     .container .footer__nav-right {
       grid-area: 2 / 11 / 6 / 15; }
-    .container .footer__contact {
+    .container .footer__blank {
       grid-area: 6 / 2 / 7 / 15; }
+    .container .footer__contact {
+      grid-area: 7 / 2 / 8 / 15; }
 
 .container .sidebar__block {
   margin-top: 1em; }
@@ -234,17 +236,28 @@ h4 {
       font-size: 2vw;
       list-style: none; }
   .footer__contact {
-    margin-top: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
     width: 100%;
     height: 100%;
-    font-size: 2.5em; }
+    font-size: 2em; }
     .footer__contact--copyright {
       font-weight: bold; }
     .footer__contact--link {
       color: #B49C82; }
     .footer__contact--rights {
       font-size: 0.5em; }
+    .footer__contact--email {
+      color: white;
+      border: none;
+      min-height: 25px;
+      min-width: 180px;
+      background-color: rgba(51, 51, 51, 0.5); }
+    .footer__contact--btn {
+      color: white;
+      border: none;
+      min-height: 25px;
+      min-width: 7em;
+      background-color: #333333; }

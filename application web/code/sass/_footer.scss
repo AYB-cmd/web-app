@@ -41,14 +41,13 @@
         }
     }
     &__contact{
-        margin-top: 8%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: baseline;
         width: 100%;
         height: 100%;
-        font-size: 2.5em;
+        font-size: 2em;
         &--copyright{
             font-weight: bold;
         }
@@ -60,7 +59,18 @@
             font-size: 0.5em;
         }
         &--email{
-
+            color: white;
+            border:none;
+            min-height: 25px;
+            min-width: 180px;
+            background-color:rgba($color: #333333, $alpha: 0.5); ;
+        }
+        &--btn{
+            color: white;
+            border:none;
+            min-height: 25px;
+            min-width: 7em;
+            background-color: #333333
         }
     }
 }

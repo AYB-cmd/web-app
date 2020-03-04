@@ -203,20 +203,60 @@ h4 {
 .footer {
   background-color: #514E4C;
   text-align: center;
-  height: 50vh; }
+  height: 50vh;
+  width: 100%; }
   .footer__nav-left {
-    color: black;
+    display: table;
+    width: 100%;
+    height: 100%;
+    color: white;
     border-radius: 20px;
     background-color: rgba(51, 51, 51, 0.5); }
     .footer__nav-left--list {
-      font-size: 4em;
-      margin-top: 10%;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 2vw;
       list-style: none; }
+  .footer__logo {
+    margin-top: 15%;
+    width: 100%;
+    height: 100%; }
   .footer__nav-right {
+    display: table;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     background-color: rgba(51, 51, 51, 0.5);
-    color: black; }
+    color: white; }
     .footer__nav-right--list {
-      font-size: 4em;
-      margin-top: 10%;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 2vw;
       list-style: none; }
+  .footer__contact {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+    height: 100%;
+    font-size: 2em; }
+    .footer__contact--copyright {
+      font-weight: bold; }
+    .footer__contact--link {
+      color: #B49C82; }
+    .footer__contact--rights {
+      font-size: 0.5em; }
+    .footer__contact--email {
+      color: white;
+      border: none;
+      min-height: 25px;
+      min-width: 180px;
+      background-color: rgba(51, 51, 51, 0.5); }
+    .footer__contact--btn {
+      color: white;
+      border: none;
+      min-height: 25px;
+      min-width: 7em;
+      background-color: #333333; }

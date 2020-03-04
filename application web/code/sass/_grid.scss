@@ -114,9 +114,13 @@
                     
                 }
             }
-            &__contact{
+            &__blank{
                 grid-area: 6 / 2 / 7 / 15;
             }
+            &__contact{
+                grid-area: 7 / 2 / 8 / 15;
+            }
+             
         }
 
     }
