@@ -124,7 +124,8 @@ h4 {
 .HEADER .header {
   background-image: url(../img/gal--5.jpg);
   background-size: cover;
-  background-position-x: -77px; }
+  background-position-x: -77px;
+  max-height: 70vh; }
   .HEADER .header__logo-block {
     background-color: #867a74;
     text-align: center; }
@@ -217,30 +218,37 @@ h4 {
         .background- .agent__developer--name span {
           margin-top: 0.3em;
           color: white;
-<<<<<<< HEAD
-          font-size: 0.6em; }
+          font-size: 1em; }
 
 .features {
-  background-color: red;
-  height: 2000;
-  width: 100%;
-  text-align: center; }
-  .features-title {
+  background-color: white;
+  height: auto;
+  width: 100%; }
+  .features .cards-section {
+    width: 22%; }
+  .features .cards .cards__card--title {
+    color: #49443F;
+    font-size: 4px; }
+  .features .cards .cards__card--desc {
+    text-align: right;
+    color: #49443F;
+    display: block;
+    font-size: 19px;
+    border: none;
+    width: 60%;
+    height: 30%;
     text-align: center; }
-  .features .cards {
-    text-align: center; }
-    .features .cards-card {
-      height: 50vh; }
-    .features .cards .cards_icon {
-      text-align: center; }
-=======
-          font-size: 1em; }
+  .features .cards .cards__card--icon {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 70px; }
 
 .footer {
   background-color: #514E4C;
   text-align: center;
   height: 50vh;
-  width: 100%; }
+  width: 100%;
+  color: white; }
   .footer__nav-left {
     display: table;
     width: 100%;
@@ -251,8 +259,11 @@ h4 {
     .footer__nav-left--list {
       display: table-cell;
       vertical-align: middle;
-      font-size: 2vw;
+      font-size: 1.5vw;
       list-style: none; }
+      .footer__nav-left--list li a {
+        color: white;
+        text-decoration: underline; }
   .footer__logo {
     margin-top: 15%;
     width: 100%;
@@ -262,13 +273,13 @@ h4 {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    background-color: rgba(51, 51, 51, 0.5);
-    color: white; }
+    background-color: rgba(51, 51, 51, 0.5); }
     .footer__nav-right--list {
       display: table-cell;
       vertical-align: middle;
-      font-size: 2vw;
-      list-style: none; }
+      font-size: 1.5vw;
+      list-style: none;
+      text-decoration: underline; }
   .footer__contact {
     display: flex;
     flex-direction: row;
@@ -276,7 +287,7 @@ h4 {
     align-items: baseline;
     width: 100%;
     height: 100%;
-    font-size: 2em; }
+    font-size: 3em; }
     .footer__contact--copyright {
       font-weight: bold; }
     .footer__contact--link {
@@ -284,15 +295,31 @@ h4 {
     .footer__contact--rights {
       font-size: 0.5em; }
     .footer__contact--email {
-      color: white;
+      border-radius: 0.5em;
+      color: blackq;
       border: none;
       min-height: 25px;
       min-width: 180px;
       background-color: rgba(51, 51, 51, 0.5); }
+      .footer__contact--email:hover {
+        background-color: white;
+        opacity: 0.8;
+        min-height: 30px;
+        min-width: 250px;
+        transition: 0.5s ease;
+        border: none; }
     .footer__contact--btn {
+      border-radius: 0.5em;
       color: white;
       border: none;
       min-height: 25px;
       min-width: 7em;
-      background-color: #333333; }
->>>>>>> 83ba458c6b80061492bc6843ff34cc70c84e9fae
+      background-color: #333333;
+      cursor: pointer; }
+      .footer__contact--btn:hover {
+        min-height: 30px;
+        background-color: white;
+        color: black;
+        opacity: 0.6;
+        min-width: 8em;
+        transition: 0.5s ease; }

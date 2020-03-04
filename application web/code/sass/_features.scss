@@ -1,26 +1,41 @@
 
 .features {
-    background-color: red;
+    background-color: white;
     height:auto;
     width: 100%;
-    text-align:left;
+        
     .features__title{
         
         
 
     }
+    .cards-section{
+width: 22%;
+    }
     .cards{
+        .cards__card--title{
+            color:#49443F;
+            font-size: 4px;
+
+        }
+        .cards__card--desc{
+            text-align: right;
+            color:#49443F ;
+            display: block;
+            font-size: 19px;
+            border: none;
+            width: 60%;
+            height: 30%;
+            text-align: center;
+                      
+
+        }
         
-        &cards__card{
-           &--desc{
-               text-align: center;
-        
-           }
            
            
            
        
-       &--icon {
+        .cards__card--icon {
         text-align: center;
         margin-bottom: 30px;
         margin-top: 70px;
@@ -28,4 +43,3 @@
        }
      }
     }
-}

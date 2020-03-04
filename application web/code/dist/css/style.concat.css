@@ -4585,8 +4585,10 @@ h4 {
       grid-area: 2 / 6 / 6 / 11; }
     .container .footer__nav-right {
       grid-area: 2 / 11 / 6 / 15; }
-    .container .footer__contact {
+    .container .footer__blank {
       grid-area: 6 / 2 / 7 / 15; }
+    .container .footer__contact {
+      grid-area: 7 / 2 / 8 / 15; }
 
 .container .sidebar__block {
   margin-top: 1em; }
@@ -4718,7 +4720,7 @@ h4 {
     .footer__nav-left--list {
       display: table-cell;
       vertical-align: middle;
-      font-size: 2vw;
+      font-size: 1.5vw;
       list-style: none; }
   .footer__logo {
     margin-top: 15%;
@@ -4734,17 +4736,19 @@ h4 {
     .footer__nav-right--list {
       display: table-cell;
       vertical-align: middle;
-      font-size: 2vw;
-      list-style: none; }
+      font-size: 1.5vw;
+      list-style: none;
+      text-decoration: underline; }
+      .footer__nav-right--list li a {
+        color: white; }
   .footer__contact {
-    margin-top: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
     width: 100%;
     height: 100%;
-    font-size: 2em; }
+    font-size: 3em; }
     .footer__contact--copyright {
       font-weight: bold; }
     .footer__contact--link {
@@ -4757,7 +4761,15 @@ h4 {
       min-height: 25px;
       min-width: 180px;
       background-color: rgba(51, 51, 51, 0.5); }
+      .footer__contact--email:hover {
+        background-color: white;
+        opacity: 0.8;
+        min-height: 30px;
+        min-width: 250px;
+        transition: 0.5s ease;
+        border: none; }
     .footer__contact--btn {
+      border-radius: 0.5em;
       color: white;
       border: none;
       min-height: 25px;
