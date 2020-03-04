@@ -75,8 +75,23 @@ h4 {
     background-color: black; }
   .container .maisons {
     grid-area: maisons;
-    height: 800px;
-    background-color: white; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px; }
+    .container .maisons .card1 {
+      grid-area: 1 / 1 / 2 / 2; }
+    .container .maisons .card2 {
+      grid-area: 1 / 2 / 2 / 3; }
+    .container .maisons .card3 {
+      grid-area: 1 / 3 / 2 / 4; }
+    .container .maisons .card4 {
+      grid-area: 2 / 1 / 3 / 2; }
+    .container .maisons .card5 {
+      grid-area: 2 / 2 / 3 / 3; }
+    .container .maisons .card6 {
+      grid-area: 2 / 3 / 3 / 4; }
   .container .galleries {
     grid-area: galleries;
     height: 800px;
@@ -184,3 +199,62 @@ h4 {
         .background- .agent__developer--name span {
           color: white;
           font-size: 0.6em; }
+
+.maisons__card {
+  padding: 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1PX solid #949494;
+  width: 70%;
+  background-color: #bdbcbc;
+  text-align: center;
+  margin-top: 3em; }
+  .maisons__card--title {
+    position: relative;
+    left: 55%;
+    transform: translateX(-25%);
+    top: -6%;
+    padding: .5em;
+    opacity: 0.6; }
+    .maisons__card--title input {
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 6px 6px 0px 0px;
+      padding: .4em; }
+  .maisons__card img {
+    width: 100%; }
+  .maisons__card input {
+    display: flex;
+    justify-content: end;
+    font-size: 9px;
+    font-family: Josefin sans-serif; }
+  .maisons__card--content {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    font-family: Josefin sans-serif;
+    font-size: 12px;
+    border-bottom: 2PX solid #1222; }
+    .maisons__card--content .first-lign {
+      margin-bottom: 30px; }
+    .maisons__card--content .font {
+      margin-right: .4em; }
+    .maisons__card--content ul {
+      list-style: none; }
+      .maisons__card--content ul .first-lign {
+        padding-bottom: 1em; }
+    .maisons__card--content .font {
+      margin-right: .4em; }
+  .maisons__card--btn {
+    position: relative;
+    padding: .5em; }
+    .maisons__card--btn Button {
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: .6em;
+      padding: .4em 2em .4em 2em;
+      margin: 7px;
+      font-family: Josefin sans-serif; }

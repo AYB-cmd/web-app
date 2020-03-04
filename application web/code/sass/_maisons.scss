@@ -1,0 +1,83 @@
+.maisons{
+    
+ &__card{
+        padding: 0;
+        position: relative;
+        left:50%;
+        transform: translateX(-50%);
+        border: 1PX solid rgb(148, 148, 148);
+        width: 70%;
+        background-color: rgb(189, 188, 188);
+        text-align: center;
+        margin-top: 3em;
+     &--title{
+        position: relative;
+        left: 55%;
+        transform: translateX(-25%);
+        top:-6%;
+        padding: .5em;
+        opacity: 0.6;
+        input{
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 6px 6px 0px 0px;
+            padding: .4em ;
+            
+        }
+    }
+    img{
+        width: 100%; 
+    }
+    input{
+        display: flex;
+        justify-content: end;
+        font-size: 9px;
+        font-family: Josefin sans-serif
+    }
+    
+    &--content{
+    
+     color: black;
+     display: flex;
+     justify-content: space-around;
+     font-family: Josefin sans-serif;
+     font-size: 12px;
+    border-bottom: 2PX solid #1222;
+    .first-lign{
+        margin-bottom: 30px;
+        
+    }
+    .font{
+        margin-right: .4em;
+    }
+     ul{
+        list-style: none;
+        //padding-bottom: 2em;
+        .first-lign{
+            padding-bottom: 1em;
+        }
+     }
+     .font{
+        margin-right: .4em;
+    }
+      
+    }
+   
+    &--btn{
+        position: relative;
+        padding: .5em;
+        Button{
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: .6em;
+            padding: .4em 2em .4em 2em ;
+            margin: 7px;
+            font-family: Josefin sans-serif
+            
+        }
+     }
+ }
+    
+}
