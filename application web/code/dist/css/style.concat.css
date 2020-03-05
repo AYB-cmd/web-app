@@ -4539,8 +4539,15 @@ h4 {
     background-color: black; }
   .container .maisons {
     grid-area: maisons;
-    height: 800px;
-    background-color: white; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px; }
+    .container .maisons__card {
+      grid-area: 1 / 1 / 2 / 2; }
+  .container .card6 {
+    grid-area: 2 / 3 / 3 / 4; }
   .container .galleries {
     grid-area: galleries;
     height: 800px;
@@ -4568,6 +4575,7 @@ h4 {
   .container .sidebar__block--menu {
     cursor: pointer; }
 
+<<<<<<< HEAD
 .HEADER .header {
   background-image: url(../img/gal--5.jpg);
   background-size: cover;
@@ -4597,59 +4605,35 @@ h4 {
       border-radius: 0.5em;
       cursor: pointer; }
       .HEADER .header__title-block--btn:hover {
+=======
+.maisons {
+  margin: 3% 7%; }
+  .maisons__card {
+    padding: 0;
+    border: 1PX solid #949494;
+    width: 70%;
+    background-color: #bdbcbc;
+    text-align: center;
+    margin-top: 3em; }
+    .maisons__card--title {
+      position: relative;
+      left: 55%;
+      transform: translateX(-25%);
+      top: -6%;
+      padding: .5em;
+      opacity: 0.6; }
+      .maisons__card--title input {
+        background-color: white;
+>>>>>>> 90e482f0d0cf183e6f7738867a63ba602103e3e5
         color: black;
-        background-color: white; }
-  .HEADER .header__brands {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    align-items: baseline; }
-    .HEADER .header__brands p {
-      font-size: 1.5em;
-      color: #B19B81;
-      position: absolute;
-      margin: 0px 45%;
-      font-weight: bold;
-      text-align: center; }
-    .HEADER .header__brands--line-left {
-      display: inline;
-      width: 40%;
-      border-top: 1em solid white;
-      position: absolute;
-      border-radius: 0 20px 20px 0; }
-    .HEADER .header__brands--line-right {
-      display: inline;
-      width: 40%;
-      border-top: 1em solid white;
-      position: absolute;
-      border-radius: 20px 0 0 20px;
-      right: 0; }
-    .HEADER .header__brands--img {
-      height: auto;
-      width: 20%;
-      margin: 4em 2em auto 2em; }
-    .HEADER .header__brands .left {
-      margin-left: 4em; }
-  .HEADER .header .right {
-    margin-right: 4em; }
-  .HEADER .header img {
-    max-width: 100%; }
-
-.background- {
-  background-color: #867a74;
-  height: 100%; }
-  .background- .agent {
-    background-color: #635751;
-    border-radius: 2em 0 0 0;
-    min-width: 200px;
-    text-align: center; }
-    .background- .agent__title {
-      border: none !important; }
-    .background- .agent__developer {
+        border: none;
+        border-radius: 6px 6px 0px 0px;
+        padding: .4em; }
+    .maisons__card img {
+      width: 100%; }
+    .maisons__card input {
       display: flex;
+<<<<<<< HEAD
       flex-direction: column;
       justify-content: center; }
       .background- .agent__developer--photo {
@@ -4784,3 +4768,36 @@ h4 {
         opacity: 0.6;
         min-width: 8em;
         transition: 0.5s ease; }
+=======
+      justify-content: end;
+      font-size: 9px;
+      font-family: Josefin sans-serif; }
+    .maisons__card--content {
+      color: black;
+      display: flex;
+      justify-content: space-around;
+      font-family: Josefin sans-serif;
+      font-size: 12px;
+      border-bottom: 2PX solid #1222; }
+      .maisons__card--content .first-lign {
+        margin-bottom: 30px; }
+      .maisons__card--content .font {
+        margin-right: .4em; }
+      .maisons__card--content ul {
+        list-style: none; }
+        .maisons__card--content ul .first-lign {
+          padding-bottom: 1em; }
+      .maisons__card--content .font {
+        margin-right: .4em; }
+    .maisons__card--btn {
+      position: relative;
+      padding: .5em; }
+      .maisons__card--btn Button {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: .6em;
+        padding: .4em 2em .4em 2em;
+        margin: 7px;
+        font-family: Josefin sans-serif; }
+>>>>>>> 90e482f0d0cf183e6f7738867a63ba602103e3e5

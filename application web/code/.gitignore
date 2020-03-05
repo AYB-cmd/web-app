@@ -1,6 +1,4 @@
 *_modules
 *.json
-main.scss
+sass/main.scss
 *.css
-
-

@@ -75,8 +75,15 @@ h4 {
     background-color: black; }
   .container .maisons {
     grid-area: maisons;
-    height: 800px;
-    background-color: white; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px; }
+    .container .maisons__card {
+      grid-area: 1 / 1 / 2 / 2; }
+  .container .card6 {
+    grid-area: 2 / 3 / 3 / 4; }
   .container .galleries {
     grid-area: galleries;
     height: 800px;
@@ -104,6 +111,7 @@ h4 {
   .container .sidebar__block--menu {
     cursor: pointer; }
 
+<<<<<<< HEAD
 .HEADER {
   min-height: 482px; }
   .HEADER .header {
@@ -261,64 +269,79 @@ h4 {
       font-size: 1.5vw;
       list-style: none; }
       .footer__nav-left--list li a {
-        color: white;
-        text-decoration: underline; }
-  .footer__logo {
-    margin-top: 15%;
-    width: 100%;
-    height: 100%; }
-  .footer__nav-right {
-    display: table;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background-color: rgba(51, 51, 51, 0.5); }
-    .footer__nav-right--list {
-      display: table-cell;
-      vertical-align: middle;
-      font-size: 1.5vw;
-      list-style: none;
-      text-decoration: underline; }
-  .footer__contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
-    width: 100%;
-    height: 100%;
-    font-size: 3em; }
-    .footer__contact--copyright {
-      font-weight: bold; }
-    .footer__contact--link {
-      color: #B49C82; }
-    .footer__contact--rights {
-      font-size: 0.5em; }
-    .footer__contact--email {
-      border-radius: 0.5em;
-      color: blackq;
-      border: none;
-      min-height: 25px;
-      min-width: 180px;
-      background-color: rgba(51, 51, 51, 0.5); }
-      .footer__contact--email:hover {
-        background-color: white;
-        opacity: 0.8;
-        min-height: 30px;
-        min-width: 250px;
-        transition: 0.5s ease;
-        border: none; }
-    .footer__contact--btn {
-      border-radius: 0.5em;
-      color: white;
-      border: none;
-      min-height: 25px;
-      min-width: 7em;
-      background-color: #333333;
-      cursor: pointer; }
-      .footer__contact--btn:hover {
-        min-height: 30px;
+=======
+.maisons {
+  margin: 3% 7%;
+  justify-items: center; }
+  .maisons__card {
+    padding: 0;
+    width: 70%;
+    background-color: #d2d2d2;
+    text-align: center;
+    margin-top: 3em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: 0.5s ease;
+    cursor: pointer; }
+    .maisons__card:hover {
+      transform: scale(1.2);
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6); }
+    .maisons__card--title {
+      position: relative;
+      left: 55%;
+      transform: translateX(-25%);
+      top: -6%;
+      padding: .5em;
+      opacity: 0.6; }
+      .maisons__card--title input {
         background-color: white;
         color: black;
-        opacity: 0.6;
-        min-width: 8em;
-        transition: 0.5s ease; }
+        border: none;
+        border-radius: 6px 6px 0px 0px;
+        padding: .4em; }
+    .maisons__card img {
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px; }
+    .maisons__card input {
+      display: flex;
+      justify-content: end;
+      font-size: 9px;
+      font-family: Josefin sans-serif; }
+    .maisons__card--content {
+      color: black;
+      display: flex;
+      justify-content: space-around;
+      font-family: Josefin sans-serif;
+      font-size: 12px;
+      border-bottom: 2PX solid #1222; }
+      .maisons__card--content .first-lign {
+        margin-bottom: 30px; }
+        .maisons__card--content .first-lign .font {
+          margin-right: .4em; }
+      .maisons__card--content ul {
+        list-style: none; }
+        .maisons__card--content ul .first-lign {
+          padding-bottom: 0em; }
+          .maisons__card--content ul .first-lign .font {
+            margin-right: .4em; }
+    .maisons__card--btn {
+      position: relative;
+      padding: .5em; }
+      .maisons__card--btn .font {
+        margin-right: .4em; }
+      .maisons__card--btn Button {
+        background-color: black;
+>>>>>>> 90e482f0d0cf183e6f7738867a63ba602103e3e5
+        color: white;
+        border: none;
+        border-radius: .6em;
+        padding: .4em 2em .4em 2em;
+        margin: 7px;
+        font-family: Josefin sans-serif;
+        transition: 0.5s ease;
+        cursor: pointer; }
+        .maisons__card--btn Button:hover {
+          transform: scale(1.2);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6); }
