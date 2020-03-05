@@ -4723,12 +4723,14 @@ h4 {
     .maisons__card--title {
       position: relative;
       left: 50%;
-      width: 80%;
+      width: 38%;
       top: -4%;
       background-color: white;
       padding: .5em;
       opacity: 0.6;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      border: none;
+      border-radius: inherit; }
     .maisons__card img {
       width: 100%;
       border-top-left-radius: 20px;

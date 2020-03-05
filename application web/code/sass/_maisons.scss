@@ -23,13 +23,18 @@
         &--title {
             position: relative;
             left: 50%;
-            width: 80%;
+            width: 38%;
             top: -4%;
             background-color: white;
-            
             padding: .5em;
             opacity: 0.6;
             transform: translateX(-50%);
+            border: none;
+            border-radius: inherit;
+            p{
+                color: black;
+               
+            }
         }
 
         img {
