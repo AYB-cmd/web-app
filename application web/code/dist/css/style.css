@@ -116,11 +116,18 @@ h4 {
   justify-items: center; }
   .maisons__card {
     padding: 0;
-    border: 1PX solid #949494;
     width: 70%;
-    background-color: #bdbcbc;
+    background-color: #d2d2d2;
     text-align: center;
-    margin-top: 3em; }
+    margin-top: 3em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: 0.5s ease;
+    cursor: pointer; }
+    .maisons__card:hover {
+      transform: scale(1.2);
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6); }
     .maisons__card--title {
       position: relative;
       left: 55%;
@@ -135,7 +142,9 @@ h4 {
         border-radius: 6px 6px 0px 0px;
         padding: .4em; }
     .maisons__card img {
-      width: 100%; }
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px; }
     .maisons__card input {
       display: flex;
       justify-content: end;
@@ -161,6 +170,8 @@ h4 {
     .maisons__card--btn {
       position: relative;
       padding: .5em; }
+      .maisons__card--btn .font {
+        margin-right: .4em; }
       .maisons__card--btn Button {
         background-color: black;
         color: white;
@@ -168,4 +179,9 @@ h4 {
         border-radius: .6em;
         padding: .4em 2em .4em 2em;
         margin: 7px;
-        font-family: Josefin sans-serif; }
+        font-family: Josefin sans-serif;
+        transition: 0.5s ease;
+        cursor: pointer; }
+        .maisons__card--btn Button:hover {
+          transform: scale(1.2);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6); }
