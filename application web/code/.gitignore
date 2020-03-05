@@ -2,3 +2,4 @@
 *.json
 sass/main.scss
 *.css
+footer.scss
