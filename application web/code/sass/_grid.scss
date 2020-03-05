@@ -96,8 +96,43 @@
         }
         .maisons{
             grid-area: maisons;
-            height: 800px;
-            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+                 &__card{
+                    
+                }
+                .card1 { 
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+            
+                .card2 { 
+                    grid-area: 1 / 2 / 2 / 3;
+                  
+                }
+                
+                .card3 {
+                    grid-area: 1 / 3 / 2 / 4;
+                }
+                  
+                .card4 { 
+                    grid-area: 2 / 1 / 3 / 2; 
+                  
+                }
+                  
+                .card5 { 
+                    grid-area: 2 / 2 / 3 / 3;
+                  
+                }
+                
+                .card6 { 
+                    grid-area: 2 / 3 / 3 / 4;
+                
+                }
+             
+           
         }
         .galleries{
             grid-area: galleries;

@@ -107,8 +107,23 @@ h4 {
     background-color: black; }
   .container .maisons {
     grid-area: maisons;
-    height: 800px;
-    background-color: white; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px; }
+    .container .maisons_card1 {
+      grid-area: 1 / 1 / 2 / 2; }
+    .container .maisons_card2 {
+      grid-area: 1 / 2 / 2 / 3; }
+    .container .maisons_card3 {
+      grid-area: 1 / 3 / 2 / 4; }
+    .container .maisons_card4 {
+      grid-area: 2 / 1 / 3 / 2; }
+    .container .maisons_card5 {
+      grid-area: 2 / 2 / 3 / 3; }
+    .container .maisons_card6 {
+      grid-area: 2 / 3 / 3 / 4; }
   .container .galleries {
     grid-area: galleries;
     height: 800px;
@@ -220,8 +235,13 @@ h4 {
       flex-direction: column;
       justify-content: center; }
       .background- .agent__developer--photo {
+<<<<<<< HEAD
+        width: 70px;
+        height: 70px;
+=======
         width: 90px;
         height: 90px;
+>>>>>>> c4e69cc4947108ebd170318af4d66dda1d9ee377
         margin: 0 auto;
         border-radius: 50%; }
       .background- .agent__developer--name {
@@ -230,6 +250,13 @@ h4 {
         color: #B49C82;
         font-weight: bold; }
         .background- .agent__developer--name span {
+<<<<<<< HEAD
+          color: white;
+          font-size: 0.6em; }
+
+.maisons {
+  width: 20px; }
+=======
           margin-top: 0.3em;
           color: white;
           font-size: 0.6em; }
@@ -309,4 +336,8 @@ h4 {
       min-height: 25px;
       min-width: 7em;
       background-color: #333333; }
+<<<<<<< HEAD
 >>>>>>> dc8391f0c80397f8d5e92e1d6df2c0058078970a
+=======
+>>>>>>> c4e69cc4947108ebd170318af4d66dda1d9ee377
+>>>>>>> ecb76d4206338d4e8318791a6454cd0c908042e8
