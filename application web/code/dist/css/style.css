@@ -104,75 +104,77 @@ h4 {
   .container .sidebar__block--menu {
     cursor: pointer; }
 
-.HEADER .header {
-  background-image: url(../img/gal--5.jpg);
-  background-size: cover;
-  background-position-x: -77px;
-  max-height: 70vh; }
-  .HEADER .header__logo-block {
-    background-color: #867a74;
-    text-align: center; }
-  .HEADER .header__title-block {
-    color: black;
-    text-align: center; }
-    .HEADER .header__title-block--title {
-      margin-top: 11%; }
-    .HEADER .header__title-block--description {
-      font-size: 3em;
-      font-weight: bold;
-      color: #49443F;
-      width: 32rem;
-      margin: 0 auto 2em auto; }
-    .HEADER .header__title-block--btn {
-      width: 97px;
-      height: 28px;
-      color: white;
-      font-size: 1.5em;
-      background-color: #333333b6;
-      border: 1px solid black;
-      border-radius: 0.5em;
-      cursor: pointer; }
-      .HEADER .header__title-block--btn:hover {
-        color: black;
-        background-color: white; }
-  .HEADER .header__brands {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    align-items: baseline; }
-    .HEADER .header__brands p {
-      font-size: 1.5em;
-      color: #B19B81;
-      position: absolute;
-      margin: 0px 45%;
-      font-weight: bold;
+.HEADER {
+  min-height: 482px; }
+  .HEADER .header {
+    background-image: url(../img/gal--5.jpg);
+    background-size: cover;
+    background-position-x: -77px;
+    max-height: 70vh;
+    min-height: 482px; }
+    .HEADER .header__logo-block {
+      background-color: #867a74;
       text-align: center; }
-    .HEADER .header__brands--line-left {
-      display: inline;
-      width: 40%;
-      border-top: 1em solid white;
-      position: absolute;
-      border-radius: 0 20px 20px 0; }
-    .HEADER .header__brands--line-right {
-      display: inline;
-      width: 40%;
-      border-top: 1em solid white;
-      position: absolute;
-      border-radius: 20px 0 0 20px;
-      right: 0; }
-    .HEADER .header__brands--img {
-      height: auto;
-      width: 20%;
-      margin: 4em 2em auto 2em; }
-    .HEADER .header__brands .left {
-      margin-left: 4em; }
-  .HEADER .header .right {
-    margin-right: 4em; }
-  .HEADER .header img {
-    max-width: 100%; }
+    .HEADER .header__title-block {
+      color: black;
+      text-align: center; }
+      .HEADER .header__title-block--title {
+        margin-top: 11%; }
+      .HEADER .header__title-block--description {
+        font-size: 3em;
+        font-weight: bold;
+        width: 32rem;
+        margin: 0 auto 2em auto; }
+      .HEADER .header__title-block--btn {
+        width: 97px;
+        height: 28px;
+        color: white;
+        font-size: 1.5em;
+        background-color: #333333b6;
+        border: 1px solid black;
+        border-radius: 0.5em;
+        cursor: pointer; }
+        .HEADER .header__title-block--btn:hover {
+          color: black;
+          background-color: white; }
+    .HEADER .header__brands {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      align-items: baseline; }
+      .HEADER .header__brands p {
+        font-size: 1.5em;
+        color: #B19B81;
+        position: absolute;
+        margin: 0px 45%;
+        font-weight: bold;
+        text-align: center; }
+      .HEADER .header__brands--line-left {
+        display: inline;
+        width: 40%;
+        border-top: 1em solid white;
+        position: absolute;
+        border-radius: 0 20px 20px 0; }
+      .HEADER .header__brands--line-right {
+        display: inline;
+        width: 40%;
+        border-top: 1em solid white;
+        position: absolute;
+        border-radius: 20px 0 0 20px;
+        right: 0; }
+      .HEADER .header__brands--img {
+        height: auto;
+        width: 20%;
+        margin: 4em 2em auto 2em; }
+      .HEADER .header__brands .left {
+        margin-left: 4em; }
+    .HEADER .header .right {
+      margin-right: 4em; }
+    .HEADER .header img {
+      max-width: 100%; }
 
 .background- {
   background-color: #867a74;
@@ -202,6 +204,43 @@ h4 {
           margin-top: 0.3em;
           color: white;
           font-size: 1em; }
+
+.features {
+  height: 2000;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px; }
+
+.features__div1 {
+  grid-area: 1 / 1 / 2 / 4;
+  justify-content: center; }
+
+.features__div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  justify-content: center; }
+
+.features__div3 {
+  grid-area: 2 / 2 / 3 / 3;
+  justify-content: center; }
+
+.features__div4 {
+  grid-area: 3 / 1 / 4 / 2;
+  justify-content: center; }
+
+.features__div5 {
+  grid-area: 3 / 2 / 4 / 3;
+  justify-content: center; }
+
+.features__div6 {
+  grid-area: 3 / 3 / 4 / 4;
+  justify-content: center; }
+
+.features__div7 {
+  grid-area: 2 / 3 / 3 / 4;
+  justify-content: center; }
 
 .footer {
   background-color: #514E4C;

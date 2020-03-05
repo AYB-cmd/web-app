@@ -4571,7 +4571,9 @@ h4 {
 .HEADER .header {
   background-image: url(../img/gal--5.jpg);
   background-size: cover;
-  background-position-x: -77px; }
+  background-position-x: -77px;
+  max-height: 70vh;
+  min-height: 482px; }
   .HEADER .header__logo-block {
     background-color: #867a74;
     text-align: center; }
@@ -4583,7 +4585,6 @@ h4 {
     .HEADER .header__title-block--description {
       font-size: 3em;
       font-weight: bold;
-      color: #49443F;
       width: 32rem;
       margin: 0 auto 2em auto; }
     .HEADER .header__title-block--btn {
@@ -4666,11 +4667,49 @@ h4 {
           color: white;
           font-size: 1em; }
 
+.features {
+  height: 2000;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px; }
+
+.features__div1 {
+  grid-area: 1 / 1 / 2 / 4;
+  justify-content: center; }
+
+.features__div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  justify-content: center; }
+
+.features__div3 {
+  grid-area: 2 / 2 / 3 / 3;
+  justify-content: center; }
+
+.features__div4 {
+  grid-area: 3 / 1 / 4 / 2;
+  justify-content: center; }
+
+.features__div5 {
+  grid-area: 3 / 2 / 4 / 3;
+  justify-content: center; }
+
+.features__div6 {
+  grid-area: 3 / 3 / 4 / 4;
+  justify-content: center; }
+
+.features__div7 {
+  grid-area: 2 / 3 / 3 / 4;
+  justify-content: center; }
+
 .footer {
   background-color: #514E4C;
   text-align: center;
   height: 50vh;
-  width: 100%; }
+  width: 100%;
+  color: white; }
   .footer__nav-left {
     display: table;
     width: 100%;
@@ -4683,6 +4722,9 @@ h4 {
       vertical-align: middle;
       font-size: 1.5vw;
       list-style: none; }
+      .footer__nav-left--list li a {
+        color: white;
+        text-decoration: underline; }
   .footer__logo {
     margin-top: 15%;
     width: 100%;
@@ -4692,16 +4734,13 @@ h4 {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    background-color: rgba(51, 51, 51, 0.5);
-    color: white; }
+    background-color: rgba(51, 51, 51, 0.5); }
     .footer__nav-right--list {
       display: table-cell;
       vertical-align: middle;
       font-size: 1.5vw;
       list-style: none;
       text-decoration: underline; }
-      .footer__nav-right--list li a {
-        color: white; }
   .footer__contact {
     display: flex;
     flex-direction: row;
@@ -4717,7 +4756,8 @@ h4 {
     .footer__contact--rights {
       font-size: 0.5em; }
     .footer__contact--email {
-      color: white;
+      border-radius: 0.5em;
+      color: blackq;
       border: none;
       min-height: 25px;
       min-width: 180px;
@@ -4735,4 +4775,12 @@ h4 {
       border: none;
       min-height: 25px;
       min-width: 7em;
-      background-color: #333333; }
+      background-color: #333333;
+      cursor: pointer; }
+      .footer__contact--btn:hover {
+        min-height: 30px;
+        background-color: white;
+        color: black;
+        opacity: 0.6;
+        min-width: 8em;
+        transition: 0.5s ease; }
