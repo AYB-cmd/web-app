@@ -1,5 +1,5 @@
 *_modules
 *.json
-sass/main.scss
+main.scss
 *.css
 footer.scss
