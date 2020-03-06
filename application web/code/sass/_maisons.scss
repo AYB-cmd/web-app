@@ -1,15 +1,22 @@
 .maisons{
-    
+    margin: 3% 7%;
+    justify-items: center;
  &__card{
         padding: 0;
-        position: relative;
-        left:50%;
-        transform: translateX(-50%);
-        border: 1PX solid rgb(148, 148, 148);
+        
         width: 70%;
-        background-color: rgb(189, 188, 188);
+        background-color: #d2d2d2;
         text-align: center;
         margin-top: 3em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        transition:0.5s ease;
+        cursor:pointer;
+        &:hover{
+            transform:scale(1.2);
+            box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+        }
      &--title{
         position: relative;
         left: 55%;
@@ -17,6 +24,7 @@
         top:-6%;
         padding: .5em;
         opacity: 0.6;
+       
         input{
             background-color: white;
             color: black;
@@ -27,7 +35,9 @@
         }
     }
     img{
-        width: 100%; 
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px; 
     }
     input{
         display: flex;
@@ -37,7 +47,7 @@
     }
     
     &--content{
-    
+       
      color: black;
      display: flex;
      justify-content: space-around;
@@ -46,27 +56,35 @@
     border-bottom: 2PX solid #1222;
     .first-lign{
         margin-bottom: 30px;
-        
+        .font{
+            margin-right: .4em;
+        }
     }
-    .font{
-        margin-right: .4em;
-    }
+
      ul{
         list-style: none;
         //padding-bottom: 2em;
+     
         .first-lign{
-            padding-bottom: 1em;
+            padding-bottom: 0em;
+            .font{
+                margin-right: .4em;
+            }
         }
      }
-     .font{
-        margin-right: .4em;
-    }
+     
       
     }
    
     &--btn{
         position: relative;
         padding: .5em;
+       
+       
+        .font{
+            margin-right: .4em;
+        }
+        
         Button{
             background-color: black;
             color: white;
@@ -74,10 +92,18 @@
             border-radius: .6em;
             padding: .4em 2em .4em 2em ;
             margin: 7px;
-            font-family: Josefin sans-serif
+            font-family: Josefin sans-serif;
+            transition:0.5s ease;
+            cursor:pointer;
+           
+            &:hover{
+                transform:scale(1.2);
+                box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+            }
+      
             
         }
      }
  }
-    
+  
 }
