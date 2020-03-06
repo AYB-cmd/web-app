@@ -1,0 +1,39 @@
+.galleries{
+    display: grid;
+       background-color: rgb(190, 18, 18);
+       width: 900px;
+       max-width: 100%;
+       height: 90vh ;
+       margin: 30px auto ;
+       grid-gap:5px;
+       grid-template-columns: repeat(5,1fr);
+       grid-template-rows: repeat(6,1fr);
+
+
+
+   
+    
+   
+    &__gallerie{
+      
+        //.pic{
+            //background-color: royalblue;
+
+        //}
+        .pic a{
+            grid-column: span 3;
+            grid-row: span 3;
+
+        }
+        .pic b{
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+           
+               
+        
+        
+            
+    
+  }
+}

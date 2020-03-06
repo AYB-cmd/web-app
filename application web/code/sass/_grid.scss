@@ -95,9 +95,17 @@
                  
              
                 .galleries{
-                    grid-area: galleries;
-                    height: 800px;
-                    background-color: black;
+                   /* width: 100%;
+                    display: grid;
+                    grid-auto-flow: dense;
+                    grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                                   "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                
+                                   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+                       grid-gap: 5px;*/
+                  
+
+                   }
                 }
                 .footer{
                     grid-area: footer;
@@ -130,5 +138,5 @@
                      
                 }
         }
-    }
+    
     

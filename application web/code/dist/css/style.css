@@ -80,26 +80,31 @@ h4 {
     grid-column-gap: 50px;
     grid-row-gap: 50px; }
     .container .maisons .galleries {
-      grid-area: galleries;
-      height: 800px;
-      background-color: black; }
-    .container .maisons .footer {
-      grid-area: footer;
-      display: grid;
-      grid-template-columns: repeat(15, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px; }
-      .container .maisons .footer__nav-left {
-        grid-area: 2 / 2 / 6 / 6; }
-      .container .maisons .footer__logo {
-        grid-area: 2 / 6 / 6 / 11; }
-      .container .maisons .footer__nav-right {
-        grid-area: 2 / 11 / 6 / 15; }
-      .container .maisons .footer__blank {
-        grid-area: 6 / 2 / 7 / 15; }
-      .container .maisons .footer__contact {
-        grid-area: 7 / 2 / 8 / 15; }
+      /* width: 100%;
+                    display: grid;
+                    grid-auto-flow: dense;
+                    grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                                   "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                
+                                   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+                       grid-gap: 5px;*/ }
+  .container .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+    .container .footer__nav-left {
+      grid-area: 2 / 2 / 6 / 6; }
+    .container .footer__logo {
+      grid-area: 2 / 6 / 6 / 11; }
+    .container .footer__nav-right {
+      grid-area: 2 / 11 / 6 / 15; }
+    .container .footer__blank {
+      grid-area: 6 / 2 / 7 / 15; }
+    .container .footer__contact {
+      grid-area: 7 / 2 / 8 / 15; }
 
 .HEADER {
   min-height: 482px; }
@@ -394,3 +399,20 @@ h4 {
         opacity: 0.6;
         min-width: 8em;
         transition: 0.5s ease; }
+
+.galleries {
+  display: grid;
+  background-color: #be1212;
+  width: 900px;
+  max-width: 100%;
+  height: 90vh;
+  margin: 30px auto;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr); }
+  .galleries__gallerie .pic a {
+    grid-column: span 3;
+    grid-row: span 3; }
+  .galleries__gallerie .pic b {
+    grid-column: span 3;
+    grid-row: span 3; }
