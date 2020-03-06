@@ -66,9 +66,26 @@ h4 {
       .container .HEADER .agent__title {
         border: 1px solid black; }
   .container .features {
-    grid-area: features;
-    height: 800px;
-    background-color: white; }
+    grid-area: features; }
+    .container .features .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      text-align: center; }
+      .container .features .cards .card1 {
+        grid-area: 1 / 1 / 2 / 2; }
+      .container .features .cards .card2 {
+        grid-area: 1 / 2 / 2 / 3; }
+      .container .features .cards .card3 {
+        grid-area: 1 / 3 / 2 / 4; }
+      .container .features .cards .card4 {
+        grid-area: 2 / 1 / 3 / 2; }
+      .container .features .cards .card5 {
+        grid-area: 2 / 2 / 3 / 3; }
+      .container .features .cards .card6 {
+        grid-area: 2 / 3 / 3 / 4; }
   .container .story {
     grid-area: story;
     height: 800px;
@@ -240,41 +257,16 @@ h4 {
           font-size: 1em; }
 
 .features {
-  height: 2000;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 16px;
-  grid-row-gap: 16px; }
-
-.features__div1 {
-  grid-area: 1 / 1 / 2 / 4;
-  justify-content: center; }
-
-.features__div2 {
-  grid-area: 2 / 1 / 3 / 2;
-  justify-content: center; }
-
-.features__div3 {
-  grid-area: 2 / 2 / 3 / 3;
-  justify-content: center; }
-
-.features__div4 {
-  grid-area: 3 / 1 / 4 / 2;
-  justify-content: center; }
-
-.features__div5 {
-  grid-area: 3 / 2 / 4 / 3;
-  justify-content: center; }
-
-.features__div6 {
-  grid-area: 3 / 3 / 4 / 4;
-  justify-content: center; }
-
-.features__div7 {
-  grid-area: 2 / 3 / 3 / 4;
-  justify-content: center; }
+  background-color: white;
+  height: auto;
+  width: 100%; }
+  .features .cards__card .cards__card--desc {
+    color: #49443F;
+    display: block;
+    font-size: 19px;
+    padding: 7%  7%;
+    text-align: center;
+    padding: 70px 30px; }
 
 .maisons {
   margin: 3% 7%;
