@@ -34,12 +34,7 @@ h4 {
 .container {
   color: white;
   display: grid;
-  grid-template-areas: "sidebar header"
- "sidebar features"
- "sidebar story"
- "sidebar maisons"
- "sidebar galleries"
- "sidebar footer";
+  grid-template-areas: "sidebar header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
   grid-template-columns: 1fr 15fr;
   width: 100%;
   padding: 0; }
@@ -91,16 +86,11 @@ h4 {
     height: 800px;
     background-color: black; }
   .container .maisons {
-    grid-area: maisons;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 50px; }
-    .container .maisons__card {
-      grid-area: 1 / 1 / 2 / 2; }
-  .container .card6 {
-    grid-area: 2 / 3 / 3 / 4; }
   .container .galleries {
     grid-area: galleries; }
     .container .galleries .gallery {
@@ -148,11 +138,6 @@ h4 {
       grid-area: 6 / 2 / 7 / 15; }
     .container .footer__contact {
       grid-area: 7 / 2 / 8 / 15; }
-
-.container .sidebar__block {
-  margin-top: 1em; }
-  .container .sidebar__block--menu {
-    cursor: pointer; }
 
 .HEADER {
   min-height: 482px; }
@@ -287,17 +272,17 @@ h4 {
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6); }
     .maisons__card--title {
       position: relative;
-      left: 55%;
-      transform: translateX(-25%);
-      top: -6%;
+      left: 50%;
+      width: 38%;
+      top: -4%;
+      background-color: white;
       padding: .5em;
-      opacity: 0.6; }
-      .maisons__card--title input {
-        background-color: white;
-        color: black;
-        border: none;
-        border-radius: 6px 6px 0px 0px;
-        padding: .4em; }
+      opacity: 0.6;
+      transform: translateX(-50%);
+      border: none;
+      border-radius: inherit; }
+      .maisons__card--title p {
+        color: black; }
     .maisons__card img {
       width: 100%;
       border-top-left-radius: 20px;
@@ -461,3 +446,42 @@ h4 {
         opacity: 0.6;
         min-width: 8em;
         transition: 0.5s ease; }
+
+.galleries {
+  text-align: center;
+  width: 100%; }
+  .galleries__quote {
+    color: #49443F;
+    font-weight: bold;
+    font-size: 3em;
+    font-style: italic; }
+  .galleries__title {
+    margin: 2em 0 2em 0;
+    color: #49443F;
+    font-size: 3em;
+    font-style: italic; }
+    .galleries__title span {
+      display: inline-block;
+      position: relative; }
+      .galleries__title span:before, .galleries__title span:after {
+        content: "";
+        position: absolute;
+        height: 0.7em;
+        border-bottom: 1px solid black;
+        top: 0;
+        width: 34vw; }
+      .galleries__title span:before {
+        right: 100%;
+        margin-right: 30px; }
+      .galleries__title span:after {
+        left: 100%;
+        margin-left: 30px; }
+  .galleries .gallery {
+    margin: 0 0 8em 0;
+    width: 100%; }
+    .galleries .gallery__items {
+      height: 100%; }
+      .galleries .gallery__items--img {
+        border-radius: 20px;
+        width: 100%;
+        height: 100%; }
