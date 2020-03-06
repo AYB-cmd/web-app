@@ -243,21 +243,22 @@ h4 {
           font-size: 1em; }
 
 .features {
-  background-image: url("image/Background-sect");
-  z-index: -1;
+  padding: 8em 0;
+  background-image: url(../img/Background-sect.png);
+  background-size: cover;
   height: auto;
   width: 100%; }
   .features .cards .cards__card--icon {
     text-align: center; }
   .features .cards .cards__card--title {
-    color: #707070;
+    color: #595450;
     font-family: 'Josefin Sans';
     line-height: 1.42857143;
     font-size: 6px;
     line-height: 1.42857143;
     font-style: italic; }
   .features .cards .cards__card--desc {
-    color: #49443F;
+    color: #333333;
     display: block;
     font-size: 19px;
     padding: 2%  22%;
