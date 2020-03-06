@@ -4470,15 +4470,10 @@ readers do not read off random characters that represent icons */
   box-sizing: border-box;
   text-decoration: none; }
 
-html {
+html, body {
   width: 100%;
-  padding: 0;
-  margin: 0; }
-
-body {
   font-family: "Josefin Sans";
   font-size: 8px;
-  width: 1024px;
   margin: 0;
   padding: 0;
   text-decoration: none; }
@@ -4503,7 +4498,12 @@ h4 {
 .container {
   color: white;
   display: grid;
-  grid-template-areas: "sidebar header" "sidebar features" "sidebar story" "sidebar maisons" "sidebar galleries" "sidebar footer";
+  grid-template-areas: "sidebar header"
+ "sidebar features"
+ "sidebar story"
+ "sidebar maisons"
+ "sidebar galleries"
+ "sidebar footer";
   grid-template-columns: 1fr 15fr;
   width: 100%;
   padding: 0; }
@@ -4549,9 +4549,35 @@ h4 {
   .container .card6 {
     grid-area: 2 / 3 / 3 / 4; }
   .container .galleries {
-    grid-area: galleries;
-    height: 800px;
-    background-color: black; }
+    grid-area: galleries; }
+    .container .galleries .gallery {
+      display: grid;
+      grid-template-columns: repeat(13, 1fr);
+      grid-gap: 16px; }
+      .container .galleries .gallery .gal-1 {
+        grid-area: 2 / 2 / 3 / 5; }
+      .container .galleries .gallery .gal-2 {
+        grid-area: 2 / 5 / 3 / 9; }
+      .container .galleries .gallery .gal-3 {
+        grid-area: 2 / 9 / 3 / 13; }
+      .container .galleries .gallery .gal-4 {
+        grid-area: 3 / 2 / 5 / 4; }
+      .container .galleries .gallery .gal-5 {
+        grid-area: 3 / 4 / 5 / 10; }
+      .container .galleries .gallery .gal-6 {
+        grid-area: 3 / 10 / 4 / 13; }
+      .container .galleries .gallery .gal-7 {
+        grid-area: 4 / 10 / 5 / 13; }
+      .container .galleries .gallery .gal-8 {
+        grid-area: 5 / 2 / 6 / 6; }
+      .container .galleries .gallery .gal-9 {
+        grid-area: 5 / 6 / 6 / 10; }
+      .container .galleries .gallery .gal-10 {
+        grid-area: 5 / 10 / 6 / 13; }
+      .container .galleries .gallery .gal-11 {
+        grid-area: 6 / 2 / 7 / 7; }
+      .container .galleries .gallery .gal-12 {
+        grid-area: 6 / 7 / 7 / 13; }
   .container .footer {
     grid-area: footer;
     display: grid;
@@ -4594,7 +4620,8 @@ h4 {
       .HEADER .header__title-block--description {
         font-size: 3em;
         font-weight: bold;
-        width: 32rem;
+        color: #49443F;
+        width: 53rem;
         margin: 0 auto 2em auto; }
       .HEADER .header__title-block--btn {
         width: 97px;
@@ -4788,6 +4815,45 @@ h4 {
           transform: scale(1.2);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6); }
 
+.galleries {
+  text-align: center;
+  width: 100%; }
+  .galleries__quote {
+    color: #49443F;
+    font-weight: bold;
+    font-size: 3em;
+    font-style: italic; }
+  .galleries__title {
+    margin: 2em 0 2em 0;
+    color: #49443F;
+    font-size: 3em;
+    font-style: italic; }
+    .galleries__title span {
+      display: inline-block;
+      position: relative; }
+      .galleries__title span:before, .galleries__title span:after {
+        content: "";
+        position: absolute;
+        height: 0.7em;
+        border-bottom: 1px solid black;
+        top: 0;
+        width: 34vw; }
+      .galleries__title span:before {
+        right: 100%;
+        margin-right: 30px; }
+      .galleries__title span:after {
+        left: 100%;
+        margin-left: 30px; }
+  .galleries .gallery {
+    margin: 0 0 8em 0;
+    width: 100%; }
+    .galleries .gallery__items {
+      height: 100%; }
+      .galleries .gallery__items--img {
+        border-radius: 20px;
+        width: 100%;
+        height: 100%; }
+
 .footer {
   background-color: #514E4C;
   text-align: center;
@@ -4832,24 +4898,23 @@ h4 {
     align-items: baseline;
     width: 100%;
     height: 100%;
-    font-size: 3em; }
+    font-size: 1vw; }
     .footer__contact--copyright {
       font-weight: bold; }
     .footer__contact--link {
       color: #B49C82; }
-    .footer__contact--rights {
-      font-size: 0.5em; }
     .footer__contact--email {
       border-radius: 0.5em;
-      color: blackq;
+      color: white;
       border: none;
-      min-height: 25px;
-      min-width: 180px;
+      min-height: 35px;
+      min-width: 223px;
       background-color: rgba(51, 51, 51, 0.5); }
       .footer__contact--email:hover {
+        color: black;
         background-color: white;
         opacity: 0.8;
-        min-height: 30px;
+        min-height: 40px;
         min-width: 250px;
         transition: 0.5s ease;
         border: none; }
@@ -4857,12 +4922,12 @@ h4 {
       border-radius: 0.5em;
       color: white;
       border: none;
-      min-height: 25px;
+      min-height: 35px;
       min-width: 7em;
       background-color: #333333;
       cursor: pointer; }
       .footer__contact--btn:hover {
-        min-height: 30px;
+        min-height: 40px;
         background-color: white;
         color: black;
         opacity: 0.6;
