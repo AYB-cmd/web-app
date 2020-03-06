@@ -1,18 +1,34 @@
 
 .features {
-    background-color: white;
+    background-image: url("image/Background-sect");
+    z-index: -1;
     height:auto;
     width: 100%;
-        
+    title{
+
+    }
+    .cards{        
     .cards__card{
-        .cards__card--desc{
-        color: #49443F;
+        &--icon{
+        text-align: center;
+        }
+        &--title{
+            color:$features-title;
+            font-family: 'Josefin Sans'  ;
+            line-height: 1.42857143;
+            font-size: 6px;
+            line-height: 1.42857143;
+            font-style: italic;
+
+        }
+        &--desc{
+        color: $features-desc;
         display: block;
         font-size: 19px;
-        padding: 7%  7%;
+        padding: 2%  22%;
         text-align: center; 
-        padding: 70px 30px;
- 
+         
         }
+    }
     }
 }
