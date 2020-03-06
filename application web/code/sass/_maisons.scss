@@ -6,6 +6,28 @@
     &__title{
         text-align: center;
         color: black;
+        margin:1em 0 1em 0 ;
+        span {
+            display: inline-block;
+            position: relative;  
+        
+            &:before,&:after {
+                content: "";
+                position: absolute;
+                height: 0.7em;
+                border-bottom: 1px solid black;
+                top: 0;
+                width: 34vw;
+            }
+            &:before {
+                right: 100%;
+                margin-right: 30px;
+            }
+            &:after {
+                left: 100%;
+                margin-left: 30px;
+            }
+        }
     }
     .maisons {
         padding: 0 0 8em 0;
