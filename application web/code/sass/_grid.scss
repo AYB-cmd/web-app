@@ -94,8 +94,9 @@
             height: 800px;
             background-color: black;
         }
+        .house{
         .maisons{
-           
+            grid-area: maisons;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
@@ -105,7 +106,7 @@
                    
                 }
             }        
-             
+        }     
                 .galleries{
                     grid-area: galleries;
                     .gallery{
