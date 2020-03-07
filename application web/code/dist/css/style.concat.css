@@ -4553,9 +4553,10 @@ h4 {
     grid-area: maisons;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 50px;
     grid-row-gap: 50px; }
+    @media only screen and (max-width: 845px) {
+      .container .house .maisons {
+        grid-template-columns: repeat(2, 1fr); } }
   .container .galleries {
     grid-area: galleries; }
     .container .galleries .gallery {
@@ -4603,6 +4604,16 @@ h4 {
       grid-area: 6 / 2 / 7 / 15; }
     .container .footer__contact {
       grid-area: 7 / 2 / 8 / 15; }
+
+@media only screen and (max-width: 400px) {
+  .container .house .maisons {
+    grid-template-columns: repeat(1, 1fr); }
+    .container .house .maisons__card {
+      width: 60%; }
+      .container .house .maisons__card--content {
+        font-size: 4em; }
+      .container .house .maisons__card--btn Button {
+        font-size: 3em; } }
 
 .HEADER {
   min-height: 482px; }
@@ -4735,7 +4746,27 @@ h4 {
   width: 100%; }
   .house__title {
     text-align: center;
-    color: black; }
+    color: #595450;
+    margin: 1em 0 1em 0; }
+    .house__title span {
+      display: inline-block;
+      position: relative; }
+      .house__title span:before, .house__title span:after {
+        content: "";
+        position: absolute;
+        height: 0.7em;
+        border-bottom: 1px solid black;
+        top: 0;
+        width: 34vw; }
+        @media only screen and (max-width: 845px) {
+          .house__title span:before, .house__title span:after {
+            width: 30vw; } }
+      .house__title span:before {
+        right: 100%;
+        margin-right: 30px; }
+      .house__title span:after {
+        left: 100%;
+        margin-left: 30px; }
   .house .maisons {
     padding: 0 0 8em 0;
     margin: 0 0 8em 0;
@@ -4762,7 +4793,6 @@ h4 {
         top: -4%;
         background-color: white;
         padding: .5em;
-        opacity: 0.6;
         transform: translateX(-50%);
         border: none;
         border-radius: inherit; }
@@ -4801,7 +4831,7 @@ h4 {
           margin-right: .4em; }
         .house .maisons__card--btn Button {
           background-color: black;
-          color: white;
+          color: #FFFFFF;
           border: none;
           border-radius: .6em;
           padding: .4em 2em .4em 2em;
@@ -4811,7 +4841,10 @@ h4 {
           cursor: pointer; }
           .house .maisons__card--btn Button:hover {
             transform: scale(1.2);
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6); }
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+            background-color: #FFFFFF;
+            color: #333333;
+            opacity: 0.8; }
 
 .galleries {
   text-align: center;
