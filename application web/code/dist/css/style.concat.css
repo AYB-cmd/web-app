@@ -4545,6 +4545,11 @@ h4 {
         grid-area: 2 / 2 / 3 / 3; }
       .container .features .cards .card6 {
         grid-area: 2 / 3 / 3 / 4; }
+    @media only screen and (max-width: 430px) {
+      .container .features {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 16px; } }
   .container .story {
     grid-area: story;
     height: 800px;
