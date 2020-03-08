@@ -151,6 +151,14 @@ h4 {
       .container .house .maisons__card--btn Button {
         font-size: 3em; } }
 
+.container .sidebar__block {
+  position: fixed;
+  margin: 2.5em; }
+  .container .sidebar__block :target {
+    display: none; }
+  .container .sidebar__block--menu {
+    cursor: pointer; }
+
 .HEADER {
   min-height: 482px; }
   .HEADER .header {
