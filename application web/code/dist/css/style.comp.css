@@ -307,7 +307,6 @@ h4 {
 .house {
   background-image: url(../img/Background-sect.png);
   background-size: cover;
-  margin: 0 0 8em 0;
   width: 100%; }
   .house__title {
     text-align: center;
@@ -322,10 +321,10 @@ h4 {
         height: 0.7em;
         border-bottom: 1px solid black;
         top: 0;
-        width: 34vw; }
+        width: 20vw; }
         @media only screen and (max-width: 845px) {
           .house__title span:before, .house__title span:after {
-            width: 20vw; } }
+            width: 30vw; } }
       .house__title span:before {
         right: 100%;
         margin-right: 30px; }
@@ -334,7 +333,6 @@ h4 {
         margin-left: 30px; }
   .house .maisons {
     padding: 0 0 8em 0;
-    margin: 0 0 8em 0;
     justify-items: center;
     width: 100%; }
     .house .maisons__card {
@@ -419,7 +417,8 @@ h4 {
     color: #49443F;
     font-weight: bold;
     font-size: 3em;
-    font-style: italic; }
+    font-style: italic;
+    padding-top: 2em; }
   .galleries__title {
     margin: 2em 0 2em 0;
     color: #49443F;
