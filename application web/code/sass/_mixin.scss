@@ -1,5 +1,5 @@
 
-
+/*
 @mixin grid-features($cols,$mgn) {
     float: left;
     margin-right: $mgn;
@@ -10,6 +10,7 @@
     }
 
 }
-#features li{
-    @include grid-features(3, 2%)
+.features{
+    @include grid-features(3, 2%);
 }
+*/

@@ -4481,11 +4481,12 @@ html, body {
 
 html {
   background-size: cover;
-  background: url(../img/wood.jpg); }
+  background: url(../img/wod.jpg); }
 
 body {
   min-width: 700px;
-  max-width: 1024px; }
+  max-width: 1024px;
+  border-right: 2px solid #645953; }
 
 .container {
   width: 100%;
@@ -4554,6 +4555,16 @@ h4 {
         grid-area: 2 / 2 / 3 / 3; }
       .container .features .cards .card6 {
         grid-area: 2 / 3 / 3 / 4; }
+      @media only screen and (max-width: 845px) {
+        .container .features .cards {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-column-gap: 16px; } }
+      @media only screen and (max-width: 400px) {
+        .container .features .cards {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(6, 1fr);
+          grid-column-gap: 16px; } }
   .container .story {
     grid-area: story;
     height: 800px;
@@ -4754,6 +4765,7 @@ h4 {
     display: block;
     font-size: 19px;
     padding: 2%  22%;
+    margin-bottom: 10%;
     text-align: center; }
 
 .house {
@@ -4864,6 +4876,7 @@ h4 {
             opacity: 0.8; }
 
 .galleries {
+  background: white;
   text-align: center;
   width: 100%; }
   .galleries__quote {
@@ -4885,7 +4898,7 @@ h4 {
         height: 0.7em;
         border-bottom: 1px solid black;
         top: 0;
-        width: 34vw; }
+        width: 20vw; }
       .galleries__title span:before {
         right: 100%;
         margin-right: 30px; }
@@ -4983,6 +4996,7 @@ h4 {
         transition: 0.5s ease; }
 
 .galleries {
+  background: white;
   text-align: center;
   width: 100%; }
   .galleries__quote {
@@ -5004,7 +5018,7 @@ h4 {
         height: 0.7em;
         border-bottom: 1px solid black;
         top: 0;
-        width: 34vw; }
+        width: 20vw; }
       .galleries__title span:before {
         right: 100%;
         margin-right: 30px; }
