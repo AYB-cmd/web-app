@@ -1,4 +1,5 @@
 .galleries{
+    background: white;
     text-align: center;
     width: 100%;
     &__quote{
@@ -24,7 +25,7 @@
                     height: 0.7em;
                     border-bottom: 1px solid black;
                     top: 0;
-                    width: 34vw;
+                    width: 20vw;
                 }
                 &:before {
                     right: 100%;
