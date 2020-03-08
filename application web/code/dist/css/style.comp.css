@@ -325,7 +325,7 @@ h4 {
         width: 34vw; }
         @media only screen and (max-width: 845px) {
           .house__title span:before, .house__title span:after {
-            width: 30vw; } }
+            width: 20vw; } }
       .house__title span:before {
         right: 100%;
         margin-right: 30px; }
@@ -530,43 +530,3 @@ h4 {
         opacity: 0.6;
         min-width: 8em;
         transition: 0.5s ease; }
-
-.galleries {
-  background: white;
-  text-align: center;
-  width: 100%; }
-  .galleries__quote {
-    color: #49443F;
-    font-weight: bold;
-    font-size: 3em;
-    font-style: italic; }
-  .galleries__title {
-    margin: 2em 0 2em 0;
-    color: #49443F;
-    font-size: 3em;
-    font-style: italic; }
-    .galleries__title span {
-      display: inline-block;
-      position: relative; }
-      .galleries__title span:before, .galleries__title span:after {
-        content: "";
-        position: absolute;
-        height: 0.7em;
-        border-bottom: 1px solid black;
-        top: 0;
-        width: 20vw; }
-      .galleries__title span:before {
-        right: 100%;
-        margin-right: 30px; }
-      .galleries__title span:after {
-        left: 100%;
-        margin-left: 30px; }
-  .galleries .gallery {
-    margin: 0 0 8em 0;
-    width: 100%; }
-    .galleries .gallery__items {
-      height: 100%; }
-      .galleries .gallery__items--img {
-        border-radius: 20px;
-        width: 100%;
-        height: 100%; }
