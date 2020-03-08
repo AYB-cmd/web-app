@@ -8,11 +8,20 @@
 
 html, body {
   width: 100%;
+  min-width: 700px;
   font-family: "Josefin Sans";
   font-size: 8px;
   margin: 0;
   padding: 0;
   text-decoration: none; }
+
+html {
+  background-size: cover;
+  background: url(../img/wood.jpg); }
+
+body {
+  min-width: 700px;
+  max-width: 1024px; }
 
 .container {
   width: 100%;
