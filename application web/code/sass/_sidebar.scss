@@ -3,11 +3,12 @@
     .sidebar{
       
        &__block{
+        position: fixed;
           margin:2.5em;
        }
             &--menu{
               cursor: pointer;
-           
+              
             }    
              
          
@@ -18,22 +19,17 @@
       visibility: hidden;
       position: fixed;
       background-color: rgba($color: #000000, $alpha: 0.8);
-      height: 100vh;
+      height: 100%;
       width: 94vw;
       left:89px;
       top: 0;
       opacity: 0;
       transition: opacity 1s, visibility 0s ;
       @media only screen  and (max-width: 800px)  {
-        width: 92%;
+        width: 90%;
         }
         
       &:target{
-        visibility: visible;
-        opacity: 1;
-        transition: 0s;
-      }
-      &:target + .background{
         visibility: visible;
         opacity: 1;
         transition: 0s;
