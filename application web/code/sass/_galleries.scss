@@ -1,0 +1,55 @@
+.galleries{
+    background: white;
+    text-align: center;
+    width: 100%;
+    &__quote{
+        color: #49443F;
+        font-weight: bold;
+        font-size: 3em;
+        font-style: italic;
+        padding-top: 2em;
+    }
+    
+    &__title{
+        margin: 2em 0 2em 0;
+        color: #49443F;
+        font-size: 3em;
+        font-style: italic;
+        
+            span {
+                display: inline-block;
+                position: relative;  
+            
+                &:before,&:after {
+                    content: "";
+                    position: absolute;
+                    height: 0.7em;
+                    border-bottom: 1px solid black;
+                    top: 0;
+                    width: 20vw;
+                }
+                &:before {
+                    right: 100%;
+                    margin-right: 30px;
+                }
+                &:after {
+                    left: 100%;
+                    margin-left: 30px;
+                }
+        }
+    }
+    .gallery{
+        margin: 0 0 8em 0;
+        width: 100%;
+        &__items{
+            
+            height: 100%;
+                &--img{
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 100%;
+                }
+            
+        }
+    }
+}
