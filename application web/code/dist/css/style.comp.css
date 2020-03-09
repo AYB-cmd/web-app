@@ -21,7 +21,6 @@ html {
 
 body {
   min-width: 700px;
-  max-width: 1024px;
   border-right: 2px solid #645953; }
 
 .container {
@@ -530,3 +529,35 @@ h4 {
         opacity: 0.6;
         min-width: 8em;
         transition: 0.5s ease; }
+
+.tete {
+  background: url(../dist/img/agnt.jpg); }
+  .tete .header {
+    text-align: center;
+    background-color: black; }
+  .tete .container {
+    padding: 35px 0px 120px 51px;
+    width: 300%; }
+    .tete .container--title {
+      color: black; }
+  .tete .info {
+    margin: 0 0 0 70px;
+    margin-top: 2em; }
+    .tete .info__butn--env {
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 15px 32px; }
+    .tete .info input {
+      border-radius: 20px;
+      border: none; }
+    .tete .info__put {
+      background: black;
+      padding: 10px;
+      display: block;
+      margin: 20px;
+      padding: 0.6em 5em; }
+    .tete .info__box {
+      display: inline-block;
+      padding-right: 20px;
+      margin: 11px 0px 34px 60px; }
