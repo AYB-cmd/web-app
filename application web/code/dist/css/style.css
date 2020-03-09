@@ -468,7 +468,7 @@ h4 {
         display: flex;
         justify-content: space-around;
         font-family: Josefin sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         border-bottom: 2PX solid #1222; }
         .house .maisons__card--content .first-lign {
           margin-bottom: 30px; }
@@ -626,3 +626,70 @@ h4 {
     .footer .footer__nav-left,
     .footer .footer__nav-right {
       font-size: 2vw; } }
+
+.contact {
+  background: url(../img/agnt.jpg);
+  background-size: cover;
+  background-position-y: 20px;
+  width: 100%;
+  height: 100vh;
+  display: block; }
+  .contact .header {
+    text-align: center;
+    background-color: black; }
+  .contact .wrap {
+    text-align: center;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .contact .wrap .container {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      width: 80%; }
+      .contact .wrap .container__title {
+        margin: 6em 0; }
+        .contact .wrap .container__title--text {
+          font-size: 3em;
+          color: white;
+          width: 20em; }
+      .contact .wrap .container__input {
+        display: flex;
+        flex-direction: column;
+        margin: 4em 0; }
+        .contact .wrap .container__input--name {
+          width: 243px;
+          height: 28px;
+          background: black;
+          margin-bottom: 2em;
+          border-radius: 8px;
+          border: none; }
+        .contact .wrap .container__input--email {
+          width: 243px;
+          height: 28px;
+          background: black;
+          margin-bottom: 2em;
+          border-radius: 8px;
+          border: none; }
+      .contact .wrap .container__checkbox {
+        display: inline-block;
+        margin-bottom: 6em;
+        margin-left: 20px; }
+        .contact .wrap .container__checkbox label {
+          font-size: large;
+          padding-right: 15px; }
+      .contact .wrap .container__butn--env {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 7px 51px;
+        font-size: 16px;
+        border-radius: 9px;
+        cursor: pointer;
+        margin-left: 31px;
+        transform: translate(-50%, -50%);
+        margin-left: 7em; }
+        .contact .wrap .container__butn--env:hover {
+          background-color: white;
+          color: black; }
