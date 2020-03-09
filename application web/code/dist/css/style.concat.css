@@ -4472,7 +4472,6 @@ readers do not read off random characters that represent icons */
 
 html, body {
   width: 100%;
-  min-width: 700px;
   font-family: "Josefin Sans";
   font-size: 8px;
   margin: 0;
@@ -4485,7 +4484,6 @@ html {
 
 body {
   position: relative;
-  min-width: 700px;
   border-right: 2px solid #645953; }
 
 .container {
@@ -4787,9 +4785,19 @@ h4 {
           color: white;
           font-size: 1em; }
 
-@media only screen and (min-width: 800px) {
-  .HEADER .background- {
-    display: none; } }
+@media only screen and (max-width: 800px) {
+  .HEADER {
+    display: block; }
+    .HEADER .header {
+      width: 100vw; }
+    .HEADER .background- {
+      display: none; } }
+
+@media only screen and (max-width: 500px) {
+  .HEADER {
+    display: block; }
+    .HEADER .header {
+      width: 100%; } }
 
 .features {
   padding: 8em 0;
@@ -4848,6 +4856,10 @@ h4 {
         cursor: pointer;
         background: black;
         color: white; }
+
+@media only screen and (max-width: 700px) {
+  .str {
+    display: none; } }
 
 .house {
   background-image: url(../img/Background-sect.png);
@@ -5074,3 +5086,7 @@ h4 {
         opacity: 0.6;
         min-width: 8em;
         transition: 0.5s ease; }
+  @media only screen and (max-width: 400px) {
+    .footer .footer__nav-left,
+    .footer .footer__nav-right {
+      font-size: 2vw; } }
