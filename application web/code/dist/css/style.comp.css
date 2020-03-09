@@ -322,12 +322,18 @@ h4 {
           font-size: 1em; }
 
 @media only screen and (max-width: 800px) {
-  .HEADER .HEADER {
-    grid-template-columns: 1F; }
-    .HEADER .HEADER .header {
-      width: 100%; }
-    .HEADER .HEADER .background- {
+  .HEADER {
+    display: block; }
+    .HEADER .header {
+      width: 100vw; }
+    .HEADER .background- {
       display: none; } }
+
+@media only screen and (max-width: 500px) {
+  .HEADER {
+    display: block; }
+    .HEADER .header {
+      width: 100%; } }
 
 .features {
   padding: 8em 0;
@@ -351,6 +357,45 @@ h4 {
     padding: 2%  22%;
     margin-bottom: 10%;
     text-align: center; }
+
+.str {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white; }
+  .str__img {
+    width: 100%; }
+    .str__img--img1 {
+      width: 82%;
+      padding: 4%; }
+  .str__story {
+    width: 100%;
+    text-align: center;
+    margin: auto; }
+    .str__story--title {
+      margin-bottom: 2em;
+      color: black;
+      text-align: center; }
+    .str__story--text {
+      color: black;
+      font-size: 2em;
+      margin-bottom: 5%;
+      margin-right: 50px;
+      margin-left: 50px; }
+    .str__story--btn {
+      background-color: beige;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 4px 4px 4px grey;
+      color: #000;
+      border: none; }
+      .str__story--btn:hover {
+        cursor: pointer;
+        background: black;
+        color: white; }
+
+@media only screen and (max-width: 700px) {
+  .str {
+    display: none; } }
 
 .house {
   background-image: url(../img/Background-sect.png);
