@@ -102,4 +102,9 @@
             }
         }
     }
+    @media only screen and (max-width: 400px) {
+        .footer__nav-left,
+        .footer__nav-right {
+            font-size: 2vw;        }
+    }
 }

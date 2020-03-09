@@ -8,7 +8,6 @@
 
 html, body {
   width: 100%;
-  min-width: 700px;
   font-family: "Josefin Sans";
   font-size: 8px;
   margin: 0;
@@ -21,7 +20,6 @@ html {
 
 body {
   position: relative;
-  min-width: 700px;
   border-right: 2px solid #645953; }
 
 .container {
@@ -240,7 +238,7 @@ h4 {
     .HEADER .header__title-block--description {
       font-size: 3em;
       font-weight: bold;
-      color: #49443F;
+      color: #49443f;
       width: 53rem;
       margin: 0 auto 2em auto; }
     .HEADER .header__title-block--btn {
@@ -265,7 +263,7 @@ h4 {
     align-items: baseline; }
     .HEADER .header__brands p {
       font-size: 1.5em;
-      color: #B19B81;
+      color: #b19b81;
       position: absolute;
       margin: 0px 45%;
       font-weight: bold;
@@ -294,38 +292,42 @@ h4 {
   .HEADER .header img {
     max-width: 100%; }
 
-.background- {
+.HEADER .background- {
   background-color: #867a74;
   height: 100%; }
-  .background- .agent {
+  .HEADER .background- .agent {
     background-color: #635751;
     border-radius: 2em 0 0 0;
     min-width: 200px;
     text-align: center; }
-    .background- .agent__title {
+    .HEADER .background- .agent__title {
       border: none !important; }
-    .background- .agent__developer {
+    .HEADER .background- .agent__developer {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .background- .agent__developer--photo {
+      .HEADER .background- .agent__developer--photo {
         width: 90px;
         height: 90px;
         margin: 0 auto;
         border-radius: 50%; }
-      .background- .agent__developer--name {
+      .HEADER .background- .agent__developer--name {
         margin-top: 1em;
         font-size: 2em;
-        color: #B49C82;
+        color: #b49c82;
         font-weight: bold; }
-        .background- .agent__developer--name span {
+        .HEADER .background- .agent__developer--name span {
           margin-top: 0.3em;
           color: white;
           font-size: 1em; }
 
-@media only screen and (min-width: 800px) {
-  .background- {
-    display: none; } }
+@media only screen and (max-width: 800px) {
+  .HEADER .HEADER {
+    grid-template-columns: 1F; }
+    .HEADER .HEADER .header {
+      width: 100%; }
+    .HEADER .HEADER .background- {
+      display: none; } }
 
 .features {
   padding: 8em 0;
@@ -575,3 +577,7 @@ h4 {
         opacity: 0.6;
         min-width: 8em;
         transition: 0.5s ease; }
+  @media only screen and (max-width: 400px) {
+    .footer .footer__nav-left,
+    .footer .footer__nav-right {
+      font-size: 2vw; } }
