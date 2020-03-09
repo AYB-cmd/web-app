@@ -1,7 +1,7 @@
 .house {
     background-image: url(../img/Background-sect.png);
     background-size: cover;
-    margin: 0 0 8em 0;
+    // i did delete a margin from here (0 0 8em 0)
     width: 100%;
     &__title{
         text-align: center;
@@ -36,7 +36,7 @@
     }
     .maisons {
         padding: 0 0 8em 0;
-        margin: 0 0 8em 0;
+        // i did delete a margin from here (0 0 8em 0)
         justify-items: center;
         width: 100%;
         &__card {

@@ -1,5 +1,5 @@
 .HEADER {
-  min-height: 482px;
+  // min-height: 482px;
   .header {
     background-image: url(../img/gal--5.jpg);
     background-size: cover;
@@ -25,7 +25,7 @@
       &--description {
         font-size: 3em;
         font-weight: bold;
-        color: #49443F;
+        color: #49443f;
         width: 53rem;
         margin: 0 auto 2em auto;
       }
@@ -34,15 +34,14 @@
         height: 28px;
         color: white;
         font-size: 1.5em;
-        background-color: #333333b6 ;
+        background-color: #333333b6;
         border: 1px solid black;
         border-radius: 0.5em;
         cursor: pointer;
-        &:hover{
-            color: black;
-            background-color: white;
+        &:hover {
+          color: black;
+          background-color: white;
         }
-        
       }
     }
     &__brands {
@@ -53,91 +52,89 @@
       background-color: rgba(black, $alpha: 0.4);
       width: 100%;
       align-items: baseline;
-      
-      p{
+
+      p {
         font-size: 1.5em;
-        color: #B19B81;
+        color: #b19b81;
         position: absolute;
         margin: 0px 45%;
         font-weight: bold;
         text-align: center;
-        
       }
-      &--line-left{
+      &--line-left {
         display: inline;
-        width:40%;
+        width: 40%;
         border-top: 1em solid white;
         position: absolute;
         border-radius: 0 20px 20px 0;
-        
-            
       }
-      &--line-right{
+      &--line-right {
         display: inline;
-        width:40%;
+        width: 40%;
         border-top: 1em solid white;
         position: absolute;
-        border-radius:  20px 0 0 20px ;
+        border-radius: 20px 0 0 20px;
         right: 0;
       }
-      
+
       &--img {
-        
         height: auto;
         width: 20%;
         margin: 4em 2em auto 2em;
-      
       }
       .left {
         margin-left: 4em;
-      
-        }
-      }
-      .right {
-        margin-right: 4em;
-      }
-      img {
-        max-width: 100%;
-        
       }
     }
+    .right {
+      margin-right: 4em;
+    }
+    img {
+      max-width: 100%;
+    }
   }
+
   .background- {
     background-color: #867a74;
-    
     height: 100%;
 
     // LEFT.SIDE OF THE HEADER
     .agent {
-      background-color: #635751 ;
+      background-color: #635751;
       border-radius: 2em 0 0 0;
       min-width: 200px;
-        text-align: center;
+
+      text-align: center;
       &__title {
         border: none !important;
       }
       &__developer {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         &--photo {
-            width: 90px;
-            height: 90px;
-            margin:0 auto ;
-            border-radius: 50%;
+          width: 90px;
+          height: 90px;
+          margin: 0 auto;
+          border-radius: 50%;
         }
         &--name {
-            margin-top: 1em;
-            font-size: 2em;
-            color: #B49C82;
-            font-weight: bold;
-            span{
-              margin-top: 0.3em;
-                color: white;
-                font-size: 1em;
-                
-            }
+          margin-top: 1em;
+          font-size: 2em;
+          color: #b49c82;
+          font-weight: bold;
+          span {
+            margin-top: 0.3em;
+            color: white;
+            font-size: 1em;
+          }
         }
       }
     }
   }
+  @media only screen and (min-width: 800px) {
+    .background- {
+      display: none;
+    }
+  }
+}
