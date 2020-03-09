@@ -10,7 +10,6 @@
 html,body {
   width: 100%;
   
-  min-width: 700px;
   font-family: 'Josefin Sans', ;
   font-size: 8px;
   margin: 0;
@@ -23,10 +22,10 @@ html{
   
 }
 body{
-  min-width: 700px;
- 
+  position: relative;
   border-right: 2px solid #645953;
 }
+
 
 
 .container {
