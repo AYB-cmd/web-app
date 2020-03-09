@@ -4704,7 +4704,7 @@ h4 {
     .HEADER .header__title-block--description {
       font-size: 3em;
       font-weight: bold;
-      color: #49443F;
+      color: #49443f;
       width: 53rem;
       margin: 0 auto 2em auto; }
     .HEADER .header__title-block--btn {
@@ -4729,7 +4729,7 @@ h4 {
     align-items: baseline; }
     .HEADER .header__brands p {
       font-size: 1.5em;
-      color: #B19B81;
+      color: #b19b81;
       position: absolute;
       margin: 0px 45%;
       font-weight: bold;
@@ -4758,37 +4758,37 @@ h4 {
   .HEADER .header img {
     max-width: 100%; }
 
-.background- {
+.HEADER .background- {
   background-color: #867a74;
   height: 100%; }
-  .background- .agent {
+  .HEADER .background- .agent {
     background-color: #635751;
     border-radius: 2em 0 0 0;
     min-width: 200px;
     text-align: center; }
-    .background- .agent__title {
+    .HEADER .background- .agent__title {
       border: none !important; }
-    .background- .agent__developer {
+    .HEADER .background- .agent__developer {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .background- .agent__developer--photo {
+      .HEADER .background- .agent__developer--photo {
         width: 90px;
         height: 90px;
         margin: 0 auto;
         border-radius: 50%; }
-      .background- .agent__developer--name {
+      .HEADER .background- .agent__developer--name {
         margin-top: 1em;
         font-size: 2em;
-        color: #B49C82;
+        color: #b49c82;
         font-weight: bold; }
-        .background- .agent__developer--name span {
+        .HEADER .background- .agent__developer--name span {
           margin-top: 0.3em;
           color: white;
           font-size: 1em; }
 
 @media only screen and (min-width: 800px) {
-  .background- {
+  .HEADER .background- {
     display: none; } }
 
 .features {
@@ -4813,6 +4813,41 @@ h4 {
     padding: 2%  22%;
     margin-bottom: 10%;
     text-align: center; }
+
+.str {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white; }
+  .str__img {
+    width: 100%; }
+    .str__img--img1 {
+      width: 82%;
+      padding: 4%; }
+  .str__story {
+    width: 100%;
+    text-align: center;
+    margin: auto; }
+    .str__story--title {
+      margin-bottom: 2em;
+      color: black;
+      text-align: center; }
+    .str__story--text {
+      color: black;
+      font-size: 2em;
+      margin-bottom: 5%;
+      margin-right: 50px;
+      margin-left: 50px; }
+    .str__story--btn {
+      background-color: beige;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 4px 4px 4px grey;
+      color: #000;
+      border: none; }
+      .str__story--btn:hover {
+        cursor: pointer;
+        background: black;
+        color: white; }
 
 .house {
   background-image: url(../img/Background-sect.png);
